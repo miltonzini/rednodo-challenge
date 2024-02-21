@@ -1,0 +1,469 @@
+// mediaqueries 
+    //     0-639px --   640px-1023px --  1024px-1399px -- 1400px-inf
+    // 0-39.9375em -- 40em-63.9375em -- 64em-87.4375em -- 87.5em-inf
+    
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap')
+ 
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+html
+    font-family: 'Open Sans', sans-serif
+    scroll-behavior: smooth
+    box-sizing: border-box
+    background: $theme-soft
+    scroll-snap-type: y mandatory // temp hide
+    // background: red
+    @media (max-width: 337px)
+        font-size: 12px
+    @media (min-width: 338px) and (max-width: 380px)
+        font-size: 14px
+    @media (min-width: 381px) and (max-width: 574px)
+        font-size: 16px
+    @media (min-width: 575px) and (max-width: 690px)
+        font-size: 16px
+    @media (min-width: 691px) and (max-width: 899px)
+        font-size: 18px
+    @media (min-width: 900px) and (max-width: 1100px)
+        font-size: 18px
+    @media (min-width: 1101px) and (max-width: 1400px)
+        font-size: 20px
+    @media (min-width: 1401px)
+        font-size: 20px
+
+
+.body
+    margin: 0
+    padding: 0
+    //line-height: 3.5rem
+
+    &.noscroll
+        overflow: hidden
+
+a, a:visited, a:hover
+    text-decoration: none
+
+strong
+    font-weight: bold
+
+audio
+    max-width: 100%
+    @media (max-width: 337px)
+        transform: scale(80%)
+
+.section-title
+    @media ( max-width: 338px )
+        display: flex!important
+        justify-content: center
+        text-align: center
+    @media ( min-width: 339px )
+        display: grid
+
+.section-title-center
+    @extend .section-title
+    // text-transform: uppercase
+    display: flex
+    justify-content: center
+    text-align: center
+    column-gap: 20px
+    max-width: 100%
+    h3, h4, h5, h6
+        margin-bottom: 1rem
+        @media (max-width: 850px)
+            grid-column: 1 / 13
+            column-gap: 0px
+        @media (min-width: 851px)
+            grid-column: 3 / 7
+
+.section-title-left-embedded
+    @extend .section-title
+    // text-transform: uppercase
+    margin-bottom: 1rem
+    @media (max-width: 819px)
+        text-align: center
+
+            
+.section-title-left
+    @extend .section-title
+    // text-transform: uppercase
+    display: grid
+    grid-template-columns: repeat(16, [col-start] 1fr)
+    column-gap: 20px
+    h3, h4, h5, h6
+        margin-bottom: 1rem
+        @media (max-width: 819px)
+            grid-column: 1 / 17
+            text-align: center
+        @media (min-width: 820px)
+            grid-column: 2 / 17
+            text-align: left
+
+.section-title-right
+    @extend .section-title
+    // text-transform: uppercase
+    text-align: right
+    display: grid
+    grid-template-columns: repeat(16, [col-start] 1fr)
+    column-gap: 20px
+    h3, h4, h5, h6
+        margin-bottom: 1rem
+        @media (max-width: 850px)
+            grid-column: 1 / 13
+        @media (min-width: 851px)
+            grid-column: 8 / 15
+
+h1
+    font-family: 'Source Sans', sans-serif
+    font-weight: bold
+
+.item-title // h5
+    color: $theme-primary
+    padding-bottom: 0
+    // margin: 1rem 0 0 0
+
+
+.row-container
+    display: flex
+    justify-content: center
+
+.row
+    // padding-left: 1em
+    // padding-right: 1em
+    width: 100%
+    max-width: 100% // temp
+
+    a, a:visited, a:hover
+        font-weight: bold
+
+
+
+
+
+    
+.wrapper
+    //background: pink
+    display: flex
+    justify-content: center
+    margin-left: auto
+    margin-right: auto
+    @media (max-width: 575px)
+        max-width: 550px
+    @media (min-width: 576px) and (max-width: 767px)
+        max-width: 575px
+    @media (min-width: 768px) and (max-width: 991px)
+        max-width: 768px
+    @media (min-width: 992px) and (max-width: 1199px)
+        max-width: 960px
+    @media (min-width: 1200px) 
+        max-width: 1140px    
+
+section
+    scroll-margin-top: 50px // navbar height
+
+    img
+        border-radius: 0.5rem
+    img.logo
+        border-radius: 0
+    video, .yt-iframe
+        border-radius: 0.5rem
+
+    .yt-iframe-wrapper
+        position: relative
+        padding-bottom: 56.25% 
+        overflow: hidden
+        .yt-iframe
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+
+    .row-container
+        display: block
+        width: 100%
+
+    .left-title
+        margin-bottom: 0
+        @media (max-width: 850px)
+            grid-column: 1 / 17
+        @media (min-width: 851px)
+            grid-column: 3 / 12
+        
+    .right-title
+        text-align: right
+        height: 1.2rem
+        margin-bottom: 0
+        @media (max-width: 850px)
+            text-align: left
+            grid-column: 1 / 13
+            margin-top: 1rem
+        @media (min-width: 851px)
+            grid-column: 8 / 15
+
+    .left-text
+        @media (max-width: 767px)
+            grid-column: 1 / 17
+            text-align: center
+        @media (min-width: 768px) and (max-width: 850px)
+            grid-column: 1 / 17
+            text-align: center
+        @media (min-width: 851px) and (max-width: 1100px)
+            grid-column: 2 / 12
+        @media (min-width: 1101px)
+            grid-column: 3 / 12
+        h3
+            margin-bottom: 0.5rem 
+        p
+            margin-bottom: 0.8rem
+
+
+
+    
+h1
+    font-size: $fz-6
+h2
+    font-size: $fz-5
+h3
+    font-size: $fz-4
+h4
+    font-size: $fz-3
+p
+    font-size: $fz-3
+.small
+    font-size: $fz-1
+.nano
+    font-size: $fz-0
+
+ul
+    text-align: left
+    list-style: disc
+    font-size: inherit
+    margin-top: 0.5rem
+    margin-bottom: 0.5rem
+    @media ( max-width: 819px )
+        // background: pink
+        padding-left: 2rem
+        padding-right: 2rem
+        
+
+    li
+        margin-left: 1rem
+        font-size: inherit
+
+form
+    input[type=password], input[type=email], input[type=text], select
+        background: $white
+        width: 100%
+        padding: 0.5rem
+        border: 1px solid $theme-primary-c
+        border-radius: 10px
+        margin-bottom: 0.4rem  
+        &:last-child
+            margin-bottom: 0
+    textarea
+        padding: 0.5rem
+        border-radius: 10px
+        border: 1px solid $theme-primary-c
+        resize: none
+
+
+
+
+
+    
+// flexbox
+.flex
+    display: flex
+
+    &-jc-sb
+        justify-content: space-between
+
+    &-jc-c
+        justify-content: center
+
+    &-ai-c
+        align-items: center
+
+// Buttons
+.btn-wrapper
+    margin-top: 1.5rem
+    margin-bottom: 1.5rem
+.btn
+    padding: 0.5rem 1.3em
+    border-radius: 1rem
+    font-weight: 600
+    margin-bottom: 0.5em
+    font-size: $fz-1
+    text-align: center
+    transition: all .2s ease
+    &:hover
+        font-weight: 600
+        cursor: pointer
+
+    &-regular
+        border: 1px solid $theme-accent
+        color: $theme-accent
+        &:hover
+            background: $theme-accent
+            color: $theme-soft
+            border: 1px solid $theme-accent
+
+    &-primary
+        border: 1px solid $theme-primary
+        background: $theme-primary
+        color: $theme-soft
+        &:hover
+            border: 1px solid lighten($theme-primary, 5)
+            background: lighten($theme-primary, 5)
+
+    &-accent
+        border: 1px solid $theme-accent
+        background: $theme-accent
+        color: $theme-soft
+        &:hover
+            border: 1px solid lighten($theme-accent, 5)
+            background: lighten($theme-accent, 5)
+
+    &-danger
+        border: 1px solid $theme-danger
+        background: $theme-danger
+        color: $theme-soft
+        &:hover
+            border: 1px solid lighten($theme-danger, 5)
+            background: lighten($theme-danger, 5)
+
+    &-outlined-light
+        border: 1px solid $theme-soft
+        color: $theme-soft
+        &:hover
+            border: 1px solid lighten($theme-primary, 5)
+            background: lighten($theme-primary, 5)
+
+    &-outlined-primary
+        border: 1px solid $theme-primary
+        color: $theme-primary
+        &:hover
+            border: 1px solid lighten($theme-primary, 5)
+            background: lighten($theme-primary, 5)
+
+    &-outlined-accent
+        border: 1px solid $theme-accent
+        color: $theme-accent
+        &:hover
+            border: 1px solid lighten($theme-accent, 5)
+            background: lighten($theme-accent, 5)
+            color: $theme-soft
+.btn-sm
+    @extend .btn
+    padding: 0.2rem 0.8rem
+.btn-nano
+    @extend .btn
+    padding: 0.2rem 0.7rem
+
+
+// Visibility
+.hide-for-mobile
+    @include breakpoint-down(small)
+        display: none
+
+.hide-for-desktop
+    @include breakpoint-up(medium)
+        display: none
+
+.visibilityHidden
+    visibility: hidden!important
+.displayNone
+    display: none!important
+
+// MODALS //
+// The Modal (background) 
+.modal 
+  display: none // Hidden by default 
+  position: fixed // Stay in place 
+  z-index: 1 // Sit on top 
+  left: 0
+  top: 0
+  width: 100% // Full width 
+  height: 100% // Full height 
+  overflow: auto // Enable scroll if needed 
+  background-color: rgb(0,0,0) // Fallback color 
+  background-color: rgba(0,0,0,0.4) // Black w/ opacity 
+
+
+// Modal Content-Box
+.modal-content 
+  color: $theme-dark
+  background-color: $theme-soft
+  margin-top: 10%
+  margin-left: auto
+  margin-right: auto
+  padding: 20px
+  border: 1px solid #888
+  border-radius: 5px
+  max-width: 80% // Could be more or less, depending on screen size 
+
+
+// The Close Button 
+.close 
+  color: #aaa
+  float: right
+  font-size: 28px
+  font-weight: bold
+
+
+.close:hover,
+.close:focus 
+  color: black
+  text-decoration: none
+  cursor: pointer
+
+
+
+.alert
+    width: 9rem
+    padding: 0.5rem
+    font-size: $fz-1
+    position: fixed
+    z-index: 10006
+    top: 5rem
+    right: 3rem
+    text-align: center
+    border-radius: 0.3rem
+    p
+        font-size: 0.8rem
+        margin-top: 0.3rem
+        margin-bottom: 0.3rem
+        line-height: 1rem
+
+    &-success
+        background: $theme-success
+        color: $theme-soft
+
+    &-danger
+        background: $theme-danger
+        color: $theme-soft
+
+.debug-modal
+    min-width: 30rem
+    max-width: 70rem
+    max-height: 20rem
+    overflow: auto
+    font-size: $fz-0
+    padding: 0.5rem
+    position: fixed
+    z-index: 10005
+    top: 8rem
+    left: 1rem
+    text-align: left
+    border-radius: 0.3rem
+    background: $theme-success
+    color: $theme-soft
+
+.underline
+    text-decoration: underline
+
+.snap
+    scroll-snap-align: start
+    scroll-margin-top: 51px // navbar height
