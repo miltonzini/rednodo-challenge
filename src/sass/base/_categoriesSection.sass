@@ -1,20 +1,26 @@
 section.categories
     padding: 2rem 3rem
-    // display: flex
-    // flex-direction: column
     .container
-        .img-grid
+        .img-grid-1
+            grid-template-columns: 32% repeat(3, 1fr)
+
+        .img-grid-2
+            grid-template-columns: repeat(3, 1fr) 32%
+
+        .img-grid-1, .img-grid-2
             display: flex
             justify-content: center
             align-items: center
-            height: 15rem
+            height: 28rem
             width: 100%
-            background: #ddd
+            background: #eaeaea
             margin-top: 1rem
-            // &-1
-            //     background: #ddd
-            //     // width: 100%
+            display: grid
+            grid-auto-rows: 1fr
+            gap: 0.5rem
+            .item
+                background: pink
+                height: 100%
 
-            // &-2
-            //     background: #adf
-            //     // width: 100%
+                &-large
+                    background: cyan
