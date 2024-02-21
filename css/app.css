@@ -931,44 +931,48 @@ form textarea {
 .header nav a:hover {
   opacity: 100%;
 }
-.header__logo {
-  visibility: hidden;
-  transition: 0.6s;
-  height: 1px;
+.header .firstBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.header__logo img {
+.header .firstBlock .header__logo {
+  transition: 0.6s;
+  height: 2.5rem;
+}
+.header .firstBlock .header__logo img {
   height: 100%;
 }
-.header__textlogo {
-  color: #ffd100;
-  text-align: center;
+.header .firstBlock .divider {
+  width: 2px;
+  height: 2rem;
+  background: #ffd100;
+  margin: 0 1.5rem;
 }
-.header__textlogo .name {
-  font-size: 1.25em;
-}
-.header__textlogo .description {
-  font-size: 1.25em;
-  font-weight: 100;
+@media (max-width: 900px) {
+  .header .firstBlock .divider {
+    margin: 0 0.5rem;
+  }
 }
 @media (max-width: 819px) {
-  .header__toggle {
+  .header .header__toggle {
     display: block;
   }
 }
 @media (min-width: 820px) {
-  .header__toggle {
+  .header .header__toggle {
     display: none;
   }
 }
-.header__toggle > span {
+.header .header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
-  background: #FCFCFC;
+  background: #181e23;
   transition: all 200ms ease-in-out;
   transform-origin: 3px 1px;
 }
-.header__toggle > span:not(:last-child) {
+.header .header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
 }
 .header .sticky {
