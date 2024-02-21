@@ -1167,9 +1167,6 @@ section.categories .container .img-grid-1, section.categories .container .img-gr
   grid-auto-rows: 1fr;
   gap: 0.5rem;
 }
-section.categories .container .img-grid-1 .item, section.categories .container .img-grid-2 .item {
-  height: 100%;
-}
 section.categories .container .img-grid-1 .subgrid-type-a, section.categories .container .img-grid-2 .subgrid-type-a {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -1188,8 +1185,32 @@ section.categories .container .img-grid-1 .subgrid-type-c, section.categories .c
   grid-auto-columns: 1fr;
   gap: 0.5rem;
 }
+section.categories .container .img-grid-1 .item, section.categories .container .img-grid-2 .item {
+  height: 100%;
+}
+section.categories .container .img-grid-1 .item .tag-dark, section.categories .container .img-grid-2 .item .tag-dark {
+  background: #181e23;
+  color: #fff;
+}
+section.categories .container .img-grid-1 .item .tag-primary, section.categories .container .img-grid-2 .item .tag-primary {
+  background: #ffd100;
+  color: #181e23;
+}
+section.categories .container .img-grid-1 .item .tag-vertical, section.categories .container .img-grid-2 .item .tag-vertical {
+  color: #fff;
+  font-weight: bold;
+}
+section.categories .container .img-grid-1 .item .tag-empty, section.categories .container .img-grid-2 .item .tag-empty {
+  background: #ffd100;
+  padding: 0.2rem 1.2rem;
+}
+section.categories .container .img-grid-1 .item .tag-dark, section.categories .container .img-grid-1 .item .tag-primary, section.categories .container .img-grid-2 .item .tag-dark, section.categories .container .img-grid-2 .item .tag-primary {
+  padding: 0.3rem 1rem;
+  font-size: 0.8em;
+}
 section.categories .container .img-grid-1 .item, section.categories .container .img-grid-1 .subitem, section.categories .container .img-grid-1 .item-large, section.categories .container .img-grid-2 .item, section.categories .container .img-grid-2 .subitem, section.categories .container .img-grid-2 .item-large {
   background-size: cover !important;
+  padding-top: 2rem;
 }
 section.categories .container .img-grid-1 .bariloche, section.categories .container .img-grid-2 .bariloche {
   background: url("../img/misc/main/bariloche.jpg");

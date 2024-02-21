@@ -1,6 +1,7 @@
 section.categories
     padding: 2rem 3rem
     .container
+        // GRID STYLES
         .img-grid-1
             grid-template-columns: 32% repeat(3, 1fr)
 
@@ -18,12 +19,6 @@ section.categories
             grid-auto-rows: 1fr
             gap: 0.5rem
             
-            .item
-                // background: pink
-                height: 100%
-
-                &-large
-                    // background: cyan
             
             .subgrid-type-a // two item
                 display: grid
@@ -47,9 +42,37 @@ section.categories
                 .subitem
                     // background: blue
 
-            // item backgrounds
+            // ITEM STYLES
+            .item
+                // background: pink
+                height: 100%
+
+                &-large
+                    // background: cyan
+
+                .tag
+                    &-dark
+                        background: $theme-dark
+                        color: $white
+                    &-primary
+                        background: $theme-primary
+                        color: $theme-dark
+                    &-vertical
+                        color: $white
+                        font-weight: bold
+
+                    &-empty
+                        background: $theme-primary
+                        padding: 0.2rem 1.2rem
+
+                    &-dark, &-primary
+                        padding: 0.3rem 1rem
+                        font-size: $fz-1
+                    
+                    
             .item, .subitem, .item-large
                 background-size: cover!important
+                padding-top: 2rem
                 
             .bariloche
                 background: url("../img/misc/main/bariloche.jpg")
