@@ -1162,7 +1162,7 @@ section.categories .container .img-grid-1, section.categories .container .img-gr
   height: 28rem;
   width: 100%;
   background: #eaeaea;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: grid;
   grid-auto-rows: 1fr;
   gap: 0.5rem;
@@ -1204,19 +1204,23 @@ section.categories .container .img-grid-1 .tag-dark, section.categories .contain
   background: #181e23;
   color: #fff;
   width: fit-content;
-  padding: 0.3rem 1rem;
+  padding: 0.8rem 3rem 0.9rem 1rem;
+  clip-path: polygon(0% 10%, 90% 10%, 83% 89%, 0% 90%);
   font-size: 0.8em;
 }
 section.categories .container .img-grid-1 .tag-primary, section.categories .container .img-grid-2 .tag-primary {
   background: #ffd100;
   color: #181e23;
   width: fit-content;
-  padding: 0.3rem 1rem;
+  padding: 0.8rem 3rem 0.9rem 1rem;
   font-size: 0.8em;
+  clip-path: polygon(0% 10%, 90% 10%, 83% 89%, 0% 90%);
 }
 section.categories .container .img-grid-1 .tag-empty, section.categories .container .img-grid-2 .tag-empty {
   background: #ffd100;
-  padding: 0.2rem 1.2rem;
+  padding: 0.7rem 1rem;
+  clip-path: polygon(0% 10%, 90% 10%, 70% 90%, 0% 90%);
+  font-size: 0.8em;
   width: 3rem;
 }
 section.categories .container .img-grid-1 .tag-vertical, section.categories .container .img-grid-2 .tag-vertical {
