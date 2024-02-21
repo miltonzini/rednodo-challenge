@@ -1168,11 +1168,7 @@ section.categories .container .img-grid-1, section.categories .container .img-gr
   gap: 0.5rem;
 }
 section.categories .container .img-grid-1 .item, section.categories .container .img-grid-2 .item {
-  background: pink;
   height: 100%;
-}
-section.categories .container .img-grid-1 .item-large, section.categories .container .img-grid-2 .item-large {
-  background: cyan;
 }
 section.categories .container .img-grid-1 .subgrid-type-a, section.categories .container .img-grid-2 .subgrid-type-a {
   display: grid;
@@ -1180,17 +1176,11 @@ section.categories .container .img-grid-1 .subgrid-type-a, section.categories .c
   grid-auto-columns: 1fr;
   gap: 0.5rem;
 }
-section.categories .container .img-grid-1 .subgrid-type-a .subitem, section.categories .container .img-grid-2 .subgrid-type-a .subitem {
-  background: blue;
-}
 section.categories .container .img-grid-1 .subgrid-type-b, section.categories .container .img-grid-2 .subgrid-type-b {
   display: grid;
   grid-template-rows: 60% 1fr;
   grid-auto-columns: 1fr;
   gap: 0.5rem;
-}
-section.categories .container .img-grid-1 .subgrid-type-b .subitem, section.categories .container .img-grid-2 .subgrid-type-b .subitem {
-  background: blue;
 }
 section.categories .container .img-grid-1 .subgrid-type-c, section.categories .container .img-grid-2 .subgrid-type-c {
   display: grid;
@@ -1198,8 +1188,56 @@ section.categories .container .img-grid-1 .subgrid-type-c, section.categories .c
   grid-auto-columns: 1fr;
   gap: 0.5rem;
 }
-section.categories .container .img-grid-1 .subgrid-type-c .subitem, section.categories .container .img-grid-2 .subgrid-type-c .subitem {
-  background: blue;
+section.categories .container .img-grid-1 .item, section.categories .container .img-grid-1 .subitem, section.categories .container .img-grid-1 .item-large, section.categories .container .img-grid-2 .item, section.categories .container .img-grid-2 .subitem, section.categories .container .img-grid-2 .item-large {
+  background-size: cover !important;
+}
+section.categories .container .img-grid-1 .bariloche, section.categories .container .img-grid-2 .bariloche {
+  background: url("../img/misc/main/bariloche.jpg");
+}
+section.categories .container .img-grid-1 .cordoba, section.categories .container .img-grid-2 .cordoba {
+  background: url("../img/misc/main/cordoba.jpg");
+}
+section.categories .container .img-grid-1 .elcalafate, section.categories .container .img-grid-2 .elcalafate {
+  background: url("../img/misc/main/el-calafate.jpg");
+}
+section.categories .container .img-grid-1 .buenosaires, section.categories .container .img-grid-2 .buenosaires {
+  background: url("../img/misc/main/buenos-aires.jpg");
+}
+section.categories .container .img-grid-1 .jujuy, section.categories .container .img-grid-2 .jujuy {
+  background: url("../img/misc/main/jujuy.jpg");
+}
+section.categories .container .img-grid-1 .puertoiguazu, section.categories .container .img-grid-2 .puertoiguazu {
+  background: url("../img/misc/main/puerto-iguazu.jpg");
+}
+section.categories .container .img-grid-1 .rosario, section.categories .container .img-grid-2 .rosario {
+  background: url("../img/misc/main/rosario.jpg");
+}
+section.categories .container .img-grid-1 .salta, section.categories .container .img-grid-2 .salta {
+  background: url("../img/misc/main/salta.jpg");
+}
+section.categories .container .img-grid-1 .sanluis, section.categories .container .img-grid-2 .sanluis {
+  background: url("../img/misc/main/san-luis.jpg");
+}
+section.categories .container .img-grid-1 .tucuman, section.categories .container .img-grid-2 .tucuman {
+  background: url("../img/misc/main/tucuman.jpg");
+}
+section.categories .container .img-grid-1 .trelew, section.categories .container .img-grid-2 .trelew {
+  background: url("../img/misc/main/trelew.jpg");
+}
+section.categories .container .img-grid-1 .ushuaia, section.categories .container .img-grid-2 .ushuaia {
+  background: url("../img/misc/main/ushuaia.jpg");
+}
+section.categories .container .img-grid-1 .sanmartindelosandes, section.categories .container .img-grid-2 .sanmartindelosandes {
+  background: url("../img/misc/main/san-martin-de-los-andes.jpg");
+}
+section.categories .container .img-grid-1 .villalaangostura, section.categories .container .img-grid-2 .villalaangostura {
+  background: url("../img/misc/main/villa-la-angostura.jpg");
+}
+section.categories .container .img-grid-1 .entrerios, section.categories .container .img-grid-2 .entrerios {
+  background: url("../img/misc/main/entre-rios.jpg");
+}
+section.categories .container .img-grid-1 .neuquen, section.categories .container .img-grid-2 .neuquen {
+  background: url("../img/misc/main/neuquen.jpg");
 }
 
 section.footer {
