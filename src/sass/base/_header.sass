@@ -75,22 +75,49 @@
             img
                 // height: 2rem
 
-        // &__textlogo
-        //     //font-size: 0.000009rem
-        //     //visibility: hidden
-        //     //transition: 0.6s
-        //     //color: rgba(1, 1, 1, 0.01 )
-        //     color: $theme-primary
-        //     text-align: center
-        //     .name
-        //         font-size: $fz-3
-        //     .description
-        //         font-size: $fz-3
-        //         font-weight: 100
-
-
 
     // .secondBlock
+
+    .header__links
+        // background: pink
+        display: flex
+        flex-direction: row
+        @media (max-width: 819px)
+            display: none
+        @media (min-width: 820px)
+            display: flex
+        a,p, span
+            font-size: $fz-2
+            transition: 0.3s
+            margin-right: 0.7rem
+            margin-left: 0.7rem
+        a.menu
+            font-weight: bold
+            margin-right: 0
+
+        .burguer
+            margin-left: 0
+            display: flex
+            flex-direction: column
+            span
+                margin-top: auto
+                margin-bottom: auto
+                height: 5px
+                background: $theme-primary
+                transition: all 200ms ease-in-out
+                transform-origin: 3px 1px
+                &:not(:last-child)
+                    margin-bottom: 0.01rem
+            .span1
+                width: 32px
+            .span2
+                width: 26px
+                
+        .socialIcons
+            a
+                margin: 0 0
+         
+
     .header__toggle
         @media (max-width: 819px)
             display: block
@@ -146,22 +173,7 @@
             color: $theme-primary
             text-align: center
 
-    &__links
-        @media (max-width: 819px)
-            display: none
-        @media (min-width: 820px)
-            display: inline
-        a
-            font-size: $fz-2
-            transition: 0.3s
-            //font-weight: bold
-            //&:not(:last-child)
-            //margin-right: 16px
-        
-        .slash
-            margin-right: 0.5rem
-            margin-left: 0.5rem
-            opacity: 0.5
+    
                 
 .navbar-container
     padding-left: 20px
