@@ -1036,11 +1036,6 @@ form textarea {
 .header .sticky .header__logo img {
   height: 100%;
 }
-.header .sticky .header__textlogo {
-  visibility: visible;
-  font-size: 1rem;
-  color: #ffd100;
-}
 .header .sticky a {
   opacity: 100%;
 }
@@ -1058,8 +1053,11 @@ form textarea {
 .header__menu a {
   display: block;
   padding: 0.625rem;
-  color: #ffd100;
+  color: #181e23;
   text-align: center;
+}
+.header__menu a:hover {
+  background: #ffd100;
 }
 
 .navbar-container {
@@ -1077,11 +1075,6 @@ section#masthead {
   align-items: center;
   flex-direction: column;
   margin-top: 0;
-}
-@media (max-width: 818px) {
-  section#masthead {
-    margin-top: 46px;
-  }
 }
 section#masthead form {
   margin-bottom: 2rem;
