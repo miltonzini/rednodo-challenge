@@ -186,38 +186,6 @@ h1 {
   font-weight: bold;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (max-width: 575px) {
-  .wrapper {
-    max-width: 550px;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .wrapper {
-    max-width: 575px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .wrapper {
-    max-width: 768px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .wrapper {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .wrapper {
-    max-width: 1140px;
-  }
-}
-
 section {
   scroll-margin-top: 50px;
 }
@@ -355,7 +323,6 @@ form input[type=password], form input[type=email], form input[type=text], form s
   background: #fff;
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #D9E1F9;
   border-radius: 10px;
   margin-bottom: 0.4rem;
 }
@@ -365,7 +332,6 @@ form input[type=password]:last-child, form input[type=email]:last-child, form in
 form textarea {
   padding: 0.5rem;
   border-radius: 10px;
-  border: 1px solid #D9E1F9;
   resize: none;
 }
 
@@ -426,15 +392,6 @@ form textarea {
 .btn-accent:hover {
   border: 1px solid #817bd4;
   background: #817bd4;
-}
-.btn-danger {
-  border: 1px solid #f03a3a;
-  background: #f03a3a;
-  color: #FCFCFC;
-}
-.btn-danger:hover {
-  border: 1px solid #f25252;
-  background: #f25252;
 }
 .btn-outlined-light {
   border: 1px solid #FCFCFC;
@@ -527,49 +484,6 @@ form textarea {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-.alert {
-  width: 9rem;
-  padding: 0.5rem;
-  font-size: 0.8em;
-  position: fixed;
-  z-index: 10006;
-  top: 5rem;
-  right: 3rem;
-  text-align: center;
-  border-radius: 0.3rem;
-}
-.alert p {
-  font-size: 0.8rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  line-height: 1rem;
-}
-.alert-success {
-  background: #72b461;
-  color: #FCFCFC;
-}
-.alert-danger {
-  background: #f03a3a;
-  color: #FCFCFC;
-}
-
-.debug-modal {
-  min-width: 30rem;
-  max-width: 70rem;
-  max-height: 20rem;
-  overflow: auto;
-  font-size: 0.64em;
-  padding: 0.5rem;
-  position: fixed;
-  z-index: 10005;
-  top: 8rem;
-  left: 1rem;
-  text-align: left;
-  border-radius: 0.3rem;
-  background: #72b461;
-  color: #FCFCFC;
 }
 
 .underline {
