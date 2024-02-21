@@ -46,35 +46,50 @@ section.categories
             .item, .subitem
                 // background: pink
                 height: 100%
+                
 
-                .tag-dark
-                    background: $theme-dark
-                    color: $white
-                    padding: 0.3rem 1rem
-                    font-size: $fz-1
-                .tag-primary
-                    background: $theme-primary
-                    color: $theme-dark
-                    padding: 0.3rem 1rem
-                    font-size: $fz-1
-                .tag-empty
-                    background: $theme-primary
-                    padding: 0.2rem 1.2rem
-                    width: 3rem
+            .element
+                height: 100%
+                position: relative
+                flex-direction: column
+                align-items: space-between
+                padding: 1.5rem 0
+                overflow: hidden
+                p
+                    display: inline
+                    font-size: $fz-2
+            .tag-dark
+                background: $theme-dark
+                color: $white
+                width: fit-content
+                padding: 0.3rem 1rem
+                font-size: $fz-1
+    
+            .tag-primary
+                background: $theme-primary
+                color: $theme-dark
+                width: fit-content
+                padding: 0.3rem 1rem
+                font-size: $fz-1
+    
+            .tag-empty
+                background: $theme-primary
+                padding: 0.2rem 1.2rem
+                width: 3rem
 
-                .item-large 
-                    .tag-vertical
-                        border: 2px solid cyan
-                        color: $white
-                        font-weight: bold
-                        font-size: $fz-4
-                        transform-origin: bottom left
-                        // transform: rotate(-90deg)
+            .tag-vertical
+                // border: 2px solid cyan
+                color: $white
+                font-weight: bold
+                font-size: $fz-7
+                width: fit-content
+                transform: rotate(-90deg)
+                position: absolute
+                bottom: 7rem
+                right: -4.5rem
                     
-                    
-            .item, .subitem, .item-large
+            .element
                 background-size: cover!important
-                // padding-top: 2rem
                 
             .bariloche
                 background: url("../img/misc/main/bariloche.jpg")
