@@ -941,8 +941,7 @@ form textarea {
   z-index: 10001;
 }
 .header nav {
-  background-color: #ffd100;
-  color: #FCFCFC;
+  color: #181e23;
   padding-top: 15px;
   padding-bottom: 15px;
   position: fixed;
@@ -1019,7 +1018,7 @@ form textarea {
   margin-bottom: 5px;
 }
 .header .sticky {
-  background-color: #ffd100;
+  background-color: rgba(255, 255, 255, 0.95);
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -1089,7 +1088,7 @@ section#masthead {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 0;
 }
 @media (max-width: 818px) {
   section#masthead {
@@ -1124,180 +1123,6 @@ section#masthead .arrow {
   font-size: 1.6em;
   margin-top: 1em;
   color: #ffd100;
-}
-
-section#masthead-sm {
-  background: url("../img/bg/masthead.jpg") !important;
-  background-size: cover !important;
-  background: #FCFCFC;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-top: 50px;
-}
-@media (max-width: 818px) {
-  section#masthead-sm {
-    margin-top: 46px;
-    text-align: center;
-  }
-}
-section#masthead-sm .pageTitle {
-  color: #ffd100;
-  text-transform: uppercase;
-}
-section#masthead-sm .pageSubtitle {
-  text-align: left;
-  color: #686C75;
-  font-weight: 600;
-}
-section#masthead-sm .description {
-  text-align: left;
-  color: #686C75;
-}
-@media (max-width: 819px) {
-  section#masthead-sm .pageTitle, section#masthead-sm .pageSubtitle, section#masthead-sm .description {
-    text-align: center;
-  }
-}
-
-section#masthead-video {
-  height: 100vh;
-  min-height: 619px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #FCFCFC;
-  position: relative;
-  overflow: hidden;
-}
-section#masthead-video .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-section#masthead-video video.video-bg {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-}
-section#masthead-video .masthead__row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-section#masthead-video .masthead__row img.logo {
-  text-align: center;
-  max-width: 90%;
-}
-@media (max-width: 574px) {
-  section#masthead-video .masthead__row img.logo {
-    width: 70vw;
-    transform: translateY(-6rem);
-  }
-}
-@media (min-width: 575px) and (max-width: 899px) {
-  section#masthead-video .masthead__row img.logo {
-    width: 70vw;
-    transform: translateY(-6rem);
-  }
-}
-@media (min-width: 900px) and (max-width: 1200px) {
-  section#masthead-video .masthead__row img.logo {
-    width: 60vw;
-    transform: translateY(-4rem);
-  }
-}
-@media (min-width: 1201px) {
-  section#masthead-video .masthead__row img.logo {
-    width: 40rem;
-    transform: translateY(-2rem);
-  }
-}
-section#masthead-video .text {
-  color: #FCFCFC;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-}
-@media (max-width: 574px) {
-  section#masthead-video .text {
-    bottom: 5rem;
-  }
-}
-@media (min-width: 575px) and (max-width: 899px) {
-  section#masthead-video .text {
-    bottom: 4rem;
-  }
-}
-@media (min-width: 900px) and (max-width: 1200px) {
-  section#masthead-video .text {
-    bottom: 4rem;
-  }
-}
-@media (min-width: 1201px) {
-  section#masthead-video .text {
-    bottom: 5rem;
-  }
-}
-section#masthead-video .text p {
-  width: 100%;
-  text-wrap: balance;
-  max-inline-size: 50ch;
-  text-align: center;
-  font-size: 1.25em;
-  font-smooth: always;
-}
-
-section#masthead-2colLeftLogo {
-  background: url("../img/bg/masthead.jpg") !important;
-  background-size: cover !important;
-  min-height: 619px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-section#masthead-2colLeftLogo .firstBlock img.logo {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-}
-@media (max-width: 574px) {
-  section#masthead-2colLeftLogo .firstBlock img.logo {
-    max-width: 70vw;
-  }
-}
-@media (min-width: 575px) and (max-width: 899px) {
-  section#masthead-2colLeftLogo .firstBlock img.logo {
-    max-width: 60vw;
-  }
-}
-section#masthead-2colLeftLogo .firstBlock h1.logo {
-  text-transform: none;
-  color: #ffd100;
-  text-align: center;
-}
-section#masthead-2colLeftLogo .firstBlock .brand-descrip {
-  text-align: center;
-  margin-top: 0.6rem;
-}
-section#masthead-2colLeftLogo .secondBlock p {
-  max-width: 41ch;
-}
-@media (max-width: 819px) {
-  section#masthead-2colLeftLogo .secondBlock {
-    text-align: center;
-  }
 }
 
 section.footer {
