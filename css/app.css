@@ -1147,27 +1147,27 @@ section#masthead .arrow {
   color: #ffd100;
 }
 
-section.categories {
+section.main {
   padding: 2rem 3rem;
   height: fit-content;
 }
-section.categories .container .img-grid-1 {
+section.main .container .img-grid-1 {
   grid-template-columns: 32% repeat(3, 1fr);
 }
 @media (max-width: 1325px) {
-  section.categories .container .img-grid-1 {
+  section.main .container .img-grid-1 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-section.categories .container .img-grid-2 {
+section.main .container .img-grid-2 {
   grid-template-columns: repeat(3, 1fr) 32%;
 }
 @media (max-width: 1325px) {
-  section.categories .container .img-grid-2 {
+  section.main .container .img-grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-section.categories .container .img-grid-1, section.categories .container .img-grid-2 {
+section.main .container .img-grid-1, section.main .container .img-grid-2 {
   justify-content: center;
   align-items: center;
   min-height: 28rem;
@@ -1179,32 +1179,32 @@ section.categories .container .img-grid-1, section.categories .container .img-gr
   gap: 0.5rem;
 }
 @media (max-width: 1325px) {
-  section.categories .container .img-grid-1, section.categories .container .img-grid-2 {
+  section.main .container .img-grid-1, section.main .container .img-grid-2 {
     min-height: 60rem;
   }
 }
-section.categories .container .img-grid-1 .subgrid-type-a, section.categories .container .img-grid-2 .subgrid-type-a {
+section.main .container .img-grid-1 .subgrid-type-a, section.main .container .img-grid-2 .subgrid-type-a {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-auto-columns: 1fr;
   gap: 0.5rem;
 }
-section.categories .container .img-grid-1 .subgrid-type-b, section.categories .container .img-grid-2 .subgrid-type-b {
+section.main .container .img-grid-1 .subgrid-type-b, section.main .container .img-grid-2 .subgrid-type-b {
   display: grid;
   grid-template-rows: 60% 1fr;
   grid-auto-columns: 1fr;
   gap: 0.5rem;
 }
-section.categories .container .img-grid-1 .subgrid-type-c, section.categories .container .img-grid-2 .subgrid-type-c {
+section.main .container .img-grid-1 .subgrid-type-c, section.main .container .img-grid-2 .subgrid-type-c {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-auto-columns: 1fr;
   gap: 0.5rem;
 }
-section.categories .container .img-grid-1 .item, section.categories .container .img-grid-1 .subitem, section.categories .container .img-grid-2 .item, section.categories .container .img-grid-2 .subitem {
+section.main .container .img-grid-1 .item, section.main .container .img-grid-1 .subitem, section.main .container .img-grid-2 .item, section.main .container .img-grid-2 .subitem {
   height: 100%;
 }
-section.categories .container .img-grid-1 .element, section.categories .container .img-grid-2 .element {
+section.main .container .img-grid-1 .element, section.main .container .img-grid-2 .element {
   height: 100%;
   position: relative;
   flex-direction: column;
@@ -1214,11 +1214,11 @@ section.categories .container .img-grid-1 .element, section.categories .containe
   background-size: cover !important;
   background-repeat: no-repeat;
 }
-section.categories .container .img-grid-1 .element p, section.categories .container .img-grid-2 .element p {
+section.main .container .img-grid-1 .element p, section.main .container .img-grid-2 .element p {
   display: inline;
   font-size: 1em;
 }
-section.categories .container .img-grid-1 .tag-dark, section.categories .container .img-grid-2 .tag-dark {
+section.main .container .img-grid-1 .tag-dark, section.main .container .img-grid-2 .tag-dark {
   background: #181e23;
   color: #fff;
   width: fit-content;
@@ -1226,7 +1226,7 @@ section.categories .container .img-grid-1 .tag-dark, section.categories .contain
   clip-path: polygon(0% 10%, 90% 10%, 83% 89%, 0% 90%);
   font-size: 0.8em;
 }
-section.categories .container .img-grid-1 .tag-primary, section.categories .container .img-grid-2 .tag-primary {
+section.main .container .img-grid-1 .tag-primary, section.main .container .img-grid-2 .tag-primary {
   background: #ffd100;
   color: #181e23;
   width: fit-content;
@@ -1234,14 +1234,14 @@ section.categories .container .img-grid-1 .tag-primary, section.categories .cont
   font-size: 0.8em;
   clip-path: polygon(0% 10%, 90% 10%, 83% 89%, 0% 90%);
 }
-section.categories .container .img-grid-1 .tag-empty, section.categories .container .img-grid-2 .tag-empty {
+section.main .container .img-grid-1 .tag-empty, section.main .container .img-grid-2 .tag-empty {
   background: #ffd100;
   padding: 0.7rem 1rem;
   clip-path: polygon(0% 10%, 90% 10%, 70% 90%, 0% 90%);
   font-size: 0.8em;
   width: 3rem;
 }
-section.categories .container .img-grid-1 .tag-vertical, section.categories .container .img-grid-2 .tag-vertical {
+section.main .container .img-grid-1 .tag-vertical, section.main .container .img-grid-2 .tag-vertical {
   color: #fff;
   font-weight: bold;
   font-size: 3.052em;
@@ -1251,56 +1251,56 @@ section.categories .container .img-grid-1 .tag-vertical, section.categories .con
   bottom: 7rem;
   right: -4.5rem;
 }
-section.categories .container .img-grid-1 .tag-dark, section.categories .container .img-grid-1 .tag-primary, section.categories .container .img-grid-2 .tag-dark, section.categories .container .img-grid-2 .tag-primary {
+section.main .container .img-grid-1 .tag-dark, section.main .container .img-grid-1 .tag-primary, section.main .container .img-grid-2 .tag-dark, section.main .container .img-grid-2 .tag-primary {
   text-wrap: wrap;
   line-height: 0.5rem;
 }
-section.categories .container .img-grid-1 .bariloche, section.categories .container .img-grid-2 .bariloche {
+section.main .container .img-grid-1 .bariloche, section.main .container .img-grid-2 .bariloche {
   background: url("../img/misc/main/bariloche.jpg");
 }
-section.categories .container .img-grid-1 .cordoba, section.categories .container .img-grid-2 .cordoba {
+section.main .container .img-grid-1 .cordoba, section.main .container .img-grid-2 .cordoba {
   background: url("../img/misc/main/cordoba.jpg");
 }
-section.categories .container .img-grid-1 .elcalafate, section.categories .container .img-grid-2 .elcalafate {
+section.main .container .img-grid-1 .elcalafate, section.main .container .img-grid-2 .elcalafate {
   background: url("../img/misc/main/el-calafate.jpg");
 }
-section.categories .container .img-grid-1 .buenosaires, section.categories .container .img-grid-2 .buenosaires {
+section.main .container .img-grid-1 .buenosaires, section.main .container .img-grid-2 .buenosaires {
   background: url("../img/misc/main/buenos-aires.jpg");
 }
-section.categories .container .img-grid-1 .jujuy, section.categories .container .img-grid-2 .jujuy {
+section.main .container .img-grid-1 .jujuy, section.main .container .img-grid-2 .jujuy {
   background: url("../img/misc/main/jujuy.jpg");
 }
-section.categories .container .img-grid-1 .puertoiguazu, section.categories .container .img-grid-2 .puertoiguazu {
+section.main .container .img-grid-1 .puertoiguazu, section.main .container .img-grid-2 .puertoiguazu {
   background: url("../img/misc/main/puerto-iguazu.jpg");
 }
-section.categories .container .img-grid-1 .rosario, section.categories .container .img-grid-2 .rosario {
+section.main .container .img-grid-1 .rosario, section.main .container .img-grid-2 .rosario {
   background: url("../img/misc/main/rosario.jpg");
 }
-section.categories .container .img-grid-1 .salta, section.categories .container .img-grid-2 .salta {
+section.main .container .img-grid-1 .salta, section.main .container .img-grid-2 .salta {
   background: url("../img/misc/main/salta.jpg");
 }
-section.categories .container .img-grid-1 .sanluis, section.categories .container .img-grid-2 .sanluis {
+section.main .container .img-grid-1 .sanluis, section.main .container .img-grid-2 .sanluis {
   background: url("../img/misc/main/san-luis.jpg");
 }
-section.categories .container .img-grid-1 .tucuman, section.categories .container .img-grid-2 .tucuman {
+section.main .container .img-grid-1 .tucuman, section.main .container .img-grid-2 .tucuman {
   background: url("../img/misc/main/tucuman.jpg");
 }
-section.categories .container .img-grid-1 .trelew, section.categories .container .img-grid-2 .trelew {
+section.main .container .img-grid-1 .trelew, section.main .container .img-grid-2 .trelew {
   background: url("../img/misc/main/trelew.jpg");
 }
-section.categories .container .img-grid-1 .ushuaia, section.categories .container .img-grid-2 .ushuaia {
+section.main .container .img-grid-1 .ushuaia, section.main .container .img-grid-2 .ushuaia {
   background: url("../img/misc/main/ushuaia.jpg");
 }
-section.categories .container .img-grid-1 .sanmartindelosandes, section.categories .container .img-grid-2 .sanmartindelosandes {
+section.main .container .img-grid-1 .sanmartindelosandes, section.main .container .img-grid-2 .sanmartindelosandes {
   background: url("../img/misc/main/san-martin-de-los-andes.jpg");
 }
-section.categories .container .img-grid-1 .villalaangostura, section.categories .container .img-grid-2 .villalaangostura {
+section.main .container .img-grid-1 .villalaangostura, section.main .container .img-grid-2 .villalaangostura {
   background: url("../img/misc/main/villa-la-angostura.jpg");
 }
-section.categories .container .img-grid-1 .entrerios, section.categories .container .img-grid-2 .entrerios {
+section.main .container .img-grid-1 .entrerios, section.main .container .img-grid-2 .entrerios {
   background: url("../img/misc/main/entre-rios.jpg");
 }
-section.categories .container .img-grid-1 .neuquen, section.categories .container .img-grid-2 .neuquen {
+section.main .container .img-grid-1 .neuquen, section.main .container .img-grid-2 .neuquen {
   background: url("../img/misc/main/neuquen.jpg");
 }
 
