@@ -1,6 +1,4 @@
-// mediaqueries 
-    //     0-639px --   640px-1023px --  1024px-1399px -- 1400px-inf
-    // 0-39.9375em -- 40em-63.9375em -- 64em-87.4375em -- 87.5em-inf
+
     
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap')
  
@@ -137,27 +135,8 @@ h1
     a, a:visited, a:hover
         font-weight: bold
 
+   
 
-
-
-
-    
-// .wrapper
-//     //background: pink
-//     display: flex
-//     justify-content: center
-//     margin-left: auto
-//     margin-right: auto
-//     @media (max-width: 575px)
-//         max-width: 550px
-//     @media (min-width: 576px) and (max-width: 767px)
-//         max-width: 575px
-//     @media (min-width: 768px) and (max-width: 991px)
-//         max-width: 768px
-//     @media (min-width: 992px) and (max-width: 1199px)
-//         max-width: 960px
-//     @media (min-width: 1200px) 
-//         max-width: 1140px    
 
 section
     scroll-margin-top: 50px // navbar height
@@ -268,10 +247,6 @@ form
         // border: 1px solid $theme-primary
         resize: none
 
-
-
-
-
     
 // flexbox
 .flex
@@ -292,7 +267,7 @@ form
     margin-bottom: 1.5rem
 .btn
     padding: 0.5rem 1.3em
-    border-radius: 1rem
+    border-radius: 0.3rem
     font-weight: 600
     margin-bottom: 0.5em
     font-size: $fz-1
@@ -318,36 +293,10 @@ form
             border: 1px solid lighten($theme-primary, 5)
             background: lighten($theme-primary, 5)
 
-    &-accent
-        border: 1px solid $theme-accent
-        background: $theme-accent
-        color: $theme-soft
-        &:hover
-            border: 1px solid lighten($theme-accent, 5)
-            background: lighten($theme-accent, 5)
+    
 
 
-    &-outlined-light
-        border: 1px solid $theme-soft
-        color: $theme-soft
-        &:hover
-            border: 1px solid lighten($theme-primary, 5)
-            background: lighten($theme-primary, 5)
-
-    &-outlined-primary
-        border: 1px solid $theme-primary
-        color: $theme-primary
-        &:hover
-            border: 1px solid lighten($theme-primary, 5)
-            background: lighten($theme-primary, 5)
-
-    &-outlined-accent
-        border: 1px solid $theme-accent
-        color: $theme-accent
-        &:hover
-            border: 1px solid lighten($theme-accent, 5)
-            background: lighten($theme-accent, 5)
-            color: $theme-soft
+    
 .btn-sm
     @extend .btn
     padding: 0.2rem 0.8rem

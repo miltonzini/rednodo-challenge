@@ -355,7 +355,7 @@ form textarea {
 
 .btn, .btn-nano, .btn-sm {
   padding: 0.5rem 1.3em;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   font-weight: 600;
   margin-bottom: 0.5em;
   font-size: 0.8em;
@@ -383,40 +383,6 @@ form textarea {
 .btn-primary:hover {
   border: 1px solid #ffd61a;
   background: #ffd61a;
-}
-.btn-accent {
-  border: 1px solid #ffd100;
-  background: #ffd100;
-  color: #FCFCFC;
-}
-.btn-accent:hover {
-  border: 1px solid #ffd61a;
-  background: #ffd61a;
-}
-.btn-outlined-light {
-  border: 1px solid #FCFCFC;
-  color: #FCFCFC;
-}
-.btn-outlined-light:hover {
-  border: 1px solid #ffd61a;
-  background: #ffd61a;
-}
-.btn-outlined-primary {
-  border: 1px solid #ffd100;
-  color: #ffd100;
-}
-.btn-outlined-primary:hover {
-  border: 1px solid #ffd61a;
-  background: #ffd61a;
-}
-.btn-outlined-accent {
-  border: 1px solid #ffd100;
-  color: #ffd100;
-}
-.btn-outlined-accent:hover {
-  border: 1px solid #ffd61a;
-  background: #ffd61a;
-  color: #FCFCFC;
 }
 
 .btn-sm {
