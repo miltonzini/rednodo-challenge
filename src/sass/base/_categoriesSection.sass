@@ -1,24 +1,32 @@
 section.categories
     padding: 2rem 3rem
+    height: fit-content
     .container
         // GRID STYLES
         .img-grid-1
             grid-template-columns: 32% repeat(3, 1fr)
+            @media ( max-width: 1325px )
+                grid-template-columns: repeat(2, 1fr)
 
         .img-grid-2
             grid-template-columns: repeat(3, 1fr) 32%
+            @media ( max-width: 1325px )
+                grid-template-columns: repeat(2, 1fr)
 
         .img-grid-1, .img-grid-2
             justify-content: center
             align-items: center
-            height: 28rem
+            min-height: 28rem
             width: 100%
             background: #eaeaea
             margin-top: 0.5rem
             display: grid
             grid-auto-rows: 1fr
             gap: 0.5rem
+            @media ( max-width: 1325px )
+                min-height: 60rem
             
+                
             
             .subgrid-type-a // two item
                 display: grid
@@ -47,6 +55,7 @@ section.categories
                 // background: pink
                 height: 100%
                 
+                
 
             .element
                 height: 100%
@@ -55,9 +64,13 @@ section.categories
                 align-items: space-between
                 padding: 1.5rem 0
                 overflow: hidden
+                background-size: cover!important
+                background-repeat: no-repeat
                 p
                     display: inline
                     font-size: $fz-2
+
+                    
             .tag-dark
                 background: $theme-dark
                 color: $white
@@ -92,8 +105,11 @@ section.categories
                 bottom: 7rem
                 right: -4.5rem
                     
-            .element
-                background-size: cover!important
+
+            .tag-dark, .tag-primary
+                text-wrap: wrap
+                // border: 2px solid red
+                line-height: .5rem
                 
             .bariloche
                 background: url("../img/misc/main/bariloche.jpg")
