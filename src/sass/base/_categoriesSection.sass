@@ -43,36 +43,38 @@ section.categories
                     // background: blue
 
             // ITEM STYLES
-            .item
+            .item, .subitem
                 // background: pink
                 height: 100%
 
-                &-large
-                    // background: cyan
+                .tag-dark
+                    background: $theme-dark
+                    color: $white
+                    padding: 0.3rem 1rem
+                    font-size: $fz-1
+                .tag-primary
+                    background: $theme-primary
+                    color: $theme-dark
+                    padding: 0.3rem 1rem
+                    font-size: $fz-1
+                .tag-empty
+                    background: $theme-primary
+                    padding: 0.2rem 1.2rem
+                    width: 3rem
 
-                .tag
-                    &-dark
-                        background: $theme-dark
-                        color: $white
-                    &-primary
-                        background: $theme-primary
-                        color: $theme-dark
-                    &-vertical
+                .item-large 
+                    .tag-vertical
+                        border: 2px solid cyan
                         color: $white
                         font-weight: bold
-
-                    &-empty
-                        background: $theme-primary
-                        padding: 0.2rem 1.2rem
-
-                    &-dark, &-primary
-                        padding: 0.3rem 1rem
-                        font-size: $fz-1
+                        font-size: $fz-4
+                        transform-origin: bottom left
+                        // transform: rotate(-90deg)
                     
                     
             .item, .subitem, .item-large
                 background-size: cover!important
-                padding-top: 2rem
+                // padding-top: 2rem
                 
             .bariloche
                 background: url("../img/misc/main/bariloche.jpg")
