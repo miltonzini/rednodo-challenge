@@ -248,6 +248,12 @@
         @media (min-width: 820px)
             grid-column: 2 / 16 // 14 columns
 
+// block-col mixin
+@mixin block-col($a, $b)
+    @media (max-width: 819px)
+        grid-column: 1 / 17
+    @media (min-width: 820px)
+        grid-column: #{$a} / #{$b}
 
     .block-col-1-2
         @include block-col(1, 2)
