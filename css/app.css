@@ -460,18 +460,6 @@ form textarea {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
-  color: #181e23;
-  background-color: #FCFCFC;
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 5px;
-  max-width: 80%;
-}
-
 .close {
   color: #aaa;
   float: right;
