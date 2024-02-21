@@ -1147,6 +1147,19 @@ section#masthead .arrow {
   color: #ffd100;
 }
 
+section.categories {
+  padding: 2rem 3rem;
+}
+section.categories .container .img-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  width: 100%;
+  background: #ddd;
+  margin-top: 1rem;
+}
+
 section.footer {
   font-size: 0.7rem;
   margin: 0;
