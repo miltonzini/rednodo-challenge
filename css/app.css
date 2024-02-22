@@ -1451,6 +1451,15 @@ section.howItWorks .block-2 {
   width: 50%;
 }
 
+section.subscribe {
+  background: #ffd100;
+  padding: 2rem 1rem;
+}
+section.subscribe .blocks-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 section.footer {
   font-size: 0.7rem;
   margin: 0;
