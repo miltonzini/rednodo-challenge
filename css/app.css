@@ -1358,6 +1358,54 @@ section.categories .categories-grid .entretenimientos {
   background: #e81f63;
 }
 
+section.howItWorks {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: row;
+}
+section.howItWorks .block-1 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 1rem;
+}
+section.howItWorks .block-1 .content-wrapper {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 575px) {
+  section.howItWorks .block-1 .content-wrapper {
+    max-width: 275px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  section.howItWorks .block-1 .content-wrapper {
+    max-width: 287px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section.howItWorks .block-1 .content-wrapper {
+    max-width: 384px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  section.howItWorks .block-1 .content-wrapper {
+    max-width: 480px;
+  }
+}
+@media (min-width: 1200px) {
+  section.howItWorks .block-1 .content-wrapper {
+    max-width: 570px;
+  }
+}
+section.howItWorks .block-2 {
+  background: url("../img/misc/como-funciona/bg-como-funciona.jpg");
+  background-size: cover;
+  width: 50%;
+}
+
 section.footer {
   font-size: 0.7rem;
   margin: 0;

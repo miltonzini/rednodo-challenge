@@ -1,0 +1,29 @@
+section.howItWorks
+    padding-left: 0
+    padding-right: 0
+    min-height: 20rem
+    display: flex
+    flex-direction: row
+    .block-1
+        width: 50%
+        display: flex
+        justify-content: flex-end
+        padding: 2rem 1rem
+        .content-wrapper
+            height: 100%
+            width: 100%
+            // background: gray // temp
+            @media (max-width: 575px)
+                max-width: 275px // prescindibles?
+            @media (min-width: 576px) and (max-width: 767px)
+                max-width: 287px // prescindibles?
+            @media (min-width: 768px) and (max-width: 991px)
+                max-width: 384px
+            @media (min-width: 992px) and (max-width: 1199px)
+                max-width: 480px
+            @media (min-width: 1200px) 
+                max-width: 570px
+    .block-2
+        background: url('../img/misc/como-funciona/bg-como-funciona.jpg')
+        background-size: cover
+        width: 50%
