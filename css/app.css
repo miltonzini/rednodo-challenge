@@ -301,24 +301,6 @@ p {
   font-size: 0.64em;
 }
 
-ul {
-  text-align: left;
-  list-style: disc;
-  font-size: inherit;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-@media (max-width: 819px) {
-  ul {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-ul li {
-  margin-left: 1rem;
-  font-size: inherit;
-}
-
 form input[type=password], form input[type=email], form input[type=text], form select {
   background: #fff;
   width: 100%;
@@ -1538,27 +1520,79 @@ section.footer .rows-container {
   display: flex;
   flex-direction: column;
 }
+section.footer .rows-container .row {
+  line-height: 1.2rem;
+}
 section.footer .rows-container .row-1 {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 870px) {
+  section.footer .rows-container .row-1 {
+    flex-direction: column;
+  }
+  section.footer .rows-container .row-1 .block-1, section.footer .rows-container .row-1 .block-2 {
+    width: 100% !important;
+  }
+}
 section.footer .rows-container .row-1 .block-1 {
-  background: #1a1a1a;
   width: 50%;
+  padding: 1rem 1rem 0 0;
+}
+section.footer .rows-container .row-1 .block-1 p {
+  font-size: 1em;
+}
+section.footer .rows-container .row-1 .block-1 .logos {
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 870px) {
+  section.footer .rows-container .row-1 .block-1 {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  section.footer .rows-container .row-1 .block-1 p {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 section.footer .rows-container .row-1 .block-2 {
+  padding-top: 0.5rem;
   width: 50%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-section.footer .rows-container .row-1 .block-2 .sub-block-1 {
-  background: #333333;
+@media (max-width: 870px) {
+  section.footer .rows-container .row-1 .block-2 {
+    padding: 1rem 0;
+  }
 }
-section.footer .rows-container .row-1 .block-2 .sub-block-2 {
-  background: #1a1a1a;
+section.footer .rows-container .row-1 .block-2 .sub-block-3 p {
+  font-size: 1em;
 }
-section.footer .rows-container .row-1 .block-2 .sub-block-3 {
-  background: #333333;
+section.footer .rows-container .row-1 .block-2 .sub-block-3 .subtitle {
+  margin-top: 0.5rem;
+}
+section.footer .rows-container .row-1 .block-2 p.title, section.footer .rows-container .row-1 .block-2 p.subtitle {
+  font-weight: bold;
+}
+section.footer .rows-container .row-1 .block-2 hr {
+  width: 90%;
+  margin: 0.5rem 0;
+  opacity: 50%;
+}
+section.footer .rows-container .row-1 .block-2 ul {
+  text-align: left;
+  list-style: none;
+  font-size: inherit;
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+section.footer .rows-container .row-1 .block-2 ul li {
+  font-size: 1em;
 }
 section.footer .rows-container .row-2 {
   background: #333333;
