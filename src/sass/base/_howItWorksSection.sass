@@ -23,6 +23,35 @@ section.howItWorks
                 max-width: 480px
             @media (min-width: 1200px) 
                 max-width: 570px
+
+            h3.title
+                font-size: $fz-3
+
+            .steps
+                display: flex
+                flex-direction: column
+                font-size: $fz-1
+
+                .step
+                    display: flex
+                    flex-direction: columns
+                    margin: 0.5rem 0
+                    .img-wrapper
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        // background: pink
+                        img
+                            width: 100%
+                            height: 100%
+                            width: 6rem!important
+                            height: 6rem!important
+                    .step-description
+                        padding-left: 0.5rem
+                        .title
+                            font-weight: bold
+                        .text
+                            //
     .block-2
         background: url('../img/misc/como-funciona/bg-como-funciona.jpg')
         background-size: cover
