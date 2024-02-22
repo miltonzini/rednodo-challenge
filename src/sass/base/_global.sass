@@ -35,7 +35,6 @@ html
 .body
     margin: 0
     padding: 0
-    //line-height: 3.5rem
 
     &.noscroll
         overflow: hidden
@@ -43,161 +42,27 @@ html
 a, a:visited, a:hover
     text-decoration: none
 
-strong
-    font-weight: bold
-
-audio
-    max-width: 100%
-    @media (max-width: 337px)
-        transform: scale(80%)
-
-.section-title
-    @media ( max-width: 338px )
-        display: flex!important
-        justify-content: center
-        text-align: center
-    @media ( min-width: 339px )
-        display: grid
-
-.section-title-center
-    @extend .section-title
-    // text-transform: uppercase
-    display: flex
-    justify-content: center
-    text-align: center
-    column-gap: 20px
-    max-width: 100%
-    h3, h4, h5, h6
-        margin-bottom: 1rem
-        @media (max-width: 850px)
-            grid-column: 1 / 13
-            column-gap: 0px
-        @media (min-width: 851px)
-            grid-column: 3 / 7
-
-.section-title-left-embedded
-    @extend .section-title
-    // text-transform: uppercase
-    margin-bottom: 1rem
-    @media (max-width: 819px)
-        text-align: center
-
-            
-.section-title-left
-    @extend .section-title
-    // text-transform: uppercase
-    display: grid
-    grid-template-columns: repeat(16, [col-start] 1fr)
-    column-gap: 20px
-    h3, h4, h5, h6
-        margin-bottom: 1rem
-        @media (max-width: 819px)
-            grid-column: 1 / 17
-            text-align: center
-        @media (min-width: 820px)
-            grid-column: 2 / 17
-            text-align: left
-
-.section-title-right
-    @extend .section-title
-    // text-transform: uppercase
-    text-align: right
-    display: grid
-    grid-template-columns: repeat(16, [col-start] 1fr)
-    column-gap: 20px
-    h3, h4, h5, h6
-        margin-bottom: 1rem
-        @media (max-width: 850px)
-            grid-column: 1 / 13
-        @media (min-width: 851px)
-            grid-column: 8 / 15
 
 h1
     font-family: 'Source Sans', sans-serif
     font-weight: bold
-
-.item-title // h5
-    color: $theme-primary
-    padding-bottom: 0
-    // margin: 1rem 0 0 0
-
 
 .row-container
     display: flex
     justify-content: center
 
 .row
-    // padding-left: 1em
-    // padding-right: 1em
     width: 100%
     max-width: 100% // temp
 
-    a, a:visited, a:hover
-        font-weight: bold
-
-   
-
-
 section
     scroll-margin-top: 50px // navbar height
-
-    img.logo
-        border-radius: 0
-    video, .yt-iframe
-        border-radius: 0.5rem
-
-    .yt-iframe-wrapper
-        position: relative
-        padding-bottom: 56.25% 
-        overflow: hidden
-        .yt-iframe
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-
     .row-container
         display: block
         width: 100%
 
-    .left-title
-        margin-bottom: 0
-        @media (max-width: 850px)
-            grid-column: 1 / 17
-        @media (min-width: 851px)
-            grid-column: 3 / 12
-        
-    .right-title
-        text-align: right
-        height: 1.2rem
-        margin-bottom: 0
-        @media (max-width: 850px)
-            text-align: left
-            grid-column: 1 / 13
-            margin-top: 1rem
-        @media (min-width: 851px)
-            grid-column: 8 / 15
 
-    .left-text
-        @media (max-width: 767px)
-            grid-column: 1 / 17
-            text-align: center
-        @media (min-width: 768px) and (max-width: 850px)
-            grid-column: 1 / 17
-            text-align: center
-        @media (min-width: 851px) and (max-width: 1100px)
-            grid-column: 2 / 12
-        @media (min-width: 1101px)
-            grid-column: 3 / 12
-        h3
-            margin-bottom: 0.5rem 
-        p
-            margin-bottom: 0.8rem
-
-
-
-    
+// font-sizes    
 h1
     font-size: $fz-6
 h2
@@ -214,25 +79,7 @@ p
     font-size: $fz-0
 
 
-
-form
-    input[type=password], input[type=email], input[type=text], select
-        background: $white
-        width: 100%
-        padding: 0.5rem
-        // border: 1px solid $theme-primary
-        border-radius: 10px
-        margin-bottom: 0.4rem  
-        &:last-child
-            margin-bottom: 0
-    textarea
-        padding: 0.5rem
-        border-radius: 10px
-        // border: 1px solid $theme-primary
-        resize: none
-
-    
-// flexbox
+// flexbox utility classes
 .flex
     display: flex
 
@@ -261,47 +108,22 @@ form
         font-weight: 600
         cursor: pointer
 
-    &-regular
-        border: 1px solid $theme-accent
-        color: $theme-accent
-        &:hover
-            background: $theme-accent
-            color: $theme-soft
-            border: 1px solid $theme-accent
-
     &-primary
         border: 1px solid $theme-primary
         background: $theme-primary
         color: $theme-soft
         &:hover
-            border: 1px solid lighten($theme-primary, 5)
-            background: lighten($theme-primary, 5)
+            border: 1px solid darken($theme-primary, 10)
+            background: darken($theme-primary, 10)
 
     
 
 
     
-.btn-sm
-    @extend .btn
-    padding: 0.2rem 0.8rem
-.btn-nano
-    @extend .btn
-    padding: 0.2rem 0.7rem
 
 
-// Visibility
-.hide-for-mobile
-    @include breakpoint-down(small)
-        display: none
 
-.hide-for-desktop
-    @include breakpoint-up(medium)
-        display: none
 
-.visibilityHidden
-    visibility: hidden!important
-.displayNone
-    display: none!important
 
 // MODALS //
 // The Modal (background) 
@@ -318,11 +140,9 @@ form
   background-color: rgba(0,0,0,0.4) // Black w/ opacity 
 
 
-
-
 // The Close Button 
 .close 
-  color: #aaa
+  color: $theme-soft
   float: right
   font-size: 28px
   font-weight: bold
@@ -334,10 +154,3 @@ form
   text-decoration: none
   cursor: pointer
 
-
-.underline
-    text-decoration: underline
-
-.snap
-    scroll-snap-align: start
-    scroll-margin-top: 51px // navbar height
