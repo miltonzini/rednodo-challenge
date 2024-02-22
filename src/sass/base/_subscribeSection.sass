@@ -1,15 +1,31 @@
 section.subscribe
     background: $theme-primary
-    padding: 2rem 1rem
+    padding: 1.5rem 1rem
 
     .blocks-wrapper
-        display: grid
-        grid-template-columns: 1fr 1fr
+        display: flex
+        width: 100%
+        flex-grow: 1
+        flex-direction: row
+        @media ( max-width: 600px )
+            flex-direction: column
+            
 
         .block-1
-            //
+            flex-grow: 1
+            width: 100%
+            .text-wrapper
+                font-size: $fz-1
+                margin-right: 1rem
+            @media ( max-width: 600px )
+                text-align: center
+                padding: 0.8rem
         .block-2
             display: flex
+            flex-grow: 1
+            width: 100%
+            @media ( max-width: 600px )
+                padding: 0.8rem
             
 
     form
@@ -38,6 +54,7 @@ section.subscribe
                 color: $white
                 height: 2.43rem
                 padding: 0 1rem
+                font-weight: bold
                 width: fit-content
                 text-align: center
                 border-top-right-radius: 0.3rem
