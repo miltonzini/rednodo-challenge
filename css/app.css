@@ -1304,6 +1304,52 @@ section.main .container .img-grid-1 .neuquen, section.main .container .img-grid-
   background: url("../img/misc/main/neuquen.jpg");
 }
 
+section.categories .categories-grid {
+  display: grid;
+  width: 100%;
+  margin-top: 0.5rem;
+  grid-auto-rows: 1fr;
+  gap: 0.3rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media (max-width: 465px) {
+  section.categories .categories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+section.categories .categories-grid .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+section.categories .categories-grid .block img {
+  width: 6rem;
+}
+section.categories .categories-grid .block p {
+  color: #FCFCFC;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+section.categories .categories-grid .servicios {
+  background: #a3ba29;
+}
+section.categories .categories-grid .alquilerdeequipos {
+  background: #00bed3;
+}
+section.categories .categories-grid .hoteles {
+  background: #f9ae00;
+}
+section.categories .categories-grid .restaurantes {
+  background: #f24335;
+}
+section.categories .categories-grid .entretenimientos {
+  background: #e81f63;
+}
+
 section.footer {
   font-size: 0.7rem;
   margin: 0;
