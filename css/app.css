@@ -1600,12 +1600,23 @@ section.footer .rows-container .row-1 .block-2 ul li {
 section.footer .rows-container .row-2 {
   margin-top: 1.5rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
+}
+@media (max-width: 870px) {
+  section.footer .rows-container .row-2 {
+    flex-direction: column;
+  }
 }
 section.footer .rows-container .row-2 .left {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 870px) {
+  section.footer .rows-container .row-2 .left {
+    justify-content: center;
+    margin-bottom: 0.8rem;
+  }
 }
 section.footer .rows-container .row-2 .left .social {
   display: flex;

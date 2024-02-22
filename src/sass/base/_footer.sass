@@ -75,12 +75,17 @@ section.footer
             // background: lighten($theme-dark, 20%)
             margin-top: 1.5rem
             display: flex
-            flex-direction: row
             justify-content: space-between
+            flex-direction: row
+            @media ( max-width: 870px  )
+                flex-direction: column
 
             .left
                 display: flex
                 flex-direction: row
+                @media ( max-width: 870px  )
+                    justify-content: center
+                    margin-bottom: 0.8rem
                 .social
                     display: flex
                     flex-direction: row
@@ -96,6 +101,9 @@ section.footer
                         border-radius: 60px
                         margin-left: 0.2rem
                         margin-left: 0.2rem
+                        
+                            
+
                 .country
                     padding: 0 1rem
                     a
