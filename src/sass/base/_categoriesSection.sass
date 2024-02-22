@@ -17,12 +17,17 @@ section.categories
             padding: 3rem 0
             img
                 width: 6rem
+                max-width: 90%
             p
                 color: $theme-soft
                 font-size: $fz-2
                 font-weight: bold
                 text-transform: uppercase
-                margin-top: 1rem
+                margin-top: 2rem
+                text-align: center
+                @media  ( max-width: 900px )
+                    font-size: $fz-1        
+                    
             
         .servicios
             background: $theme-green
