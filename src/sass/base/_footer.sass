@@ -2,7 +2,7 @@ section.footer
     background: $theme-dark
     color: $theme-soft
     font-size: $fz-0
-    padding: 3rem 1rem
+    padding: 3rem 1rem 5rem 1rem
     .rows-container
         display: flex
         flex-direction: column
@@ -11,7 +11,7 @@ section.footer
         .row-1
             display: flex
             flex-direction: row
-            @media  ( max-width: 870px  )
+            @media ( max-width: 870px  )
                 flex-direction: column
                 .block-1, .block-2
                     width: 100%!important
@@ -24,6 +24,10 @@ section.footer
                     font-size: $fz-2
                 .logos
                     margin-bottom: 0.5rem
+                    img
+                        margin: 0 0.5rem
+                    .mainLogo
+                        transform: translateY(6%) // ad-hoc
                 @media  ( max-width: 870px  )
                     padding: 3rem 0
                     display: flex
@@ -68,8 +72,36 @@ section.footer
                         font-size: $fz-2
 
         .row-2
-            background: lighten($theme-dark, 20%)
+            // background: lighten($theme-dark, 20%)
+            margin-top: 1.5rem
             display: flex
             flex-direction: row
             justify-content: space-between
+
+            .left
+                display: flex
+                flex-direction: row
+                .social
+                    display: flex
+                    flex-direction: row
+                    .icon
+                        color: $theme-dark
+                        background: $theme-soft
+                        padding:0.5rem
+                        width: 1.5rem
+                        height: 1.5rem
+                        display: flex
+                        -moz-border-radius: 60px
+                        -webkit-border-radius: 60px
+                        border-radius: 60px
+                        margin-left: 0.2rem
+                        margin-left: 0.2rem
+                .country
+                    padding: 0 1rem
+                    a
+                        font-weight: normal
+                        font-size: $fz-2
+            .right
+                p
+                    font-size: $fz-2
     
