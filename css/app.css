@@ -1361,6 +1361,7 @@ section.categories .categories-grid .entretenimientos {
 section.howItWorks {
   padding-left: 0;
   padding-right: 0;
+  margin-top: 0.25rem;
   min-height: 20rem;
   display: flex;
   flex-direction: row;
@@ -1401,17 +1402,20 @@ section.howItWorks .block-1 .content-wrapper {
   }
 }
 section.howItWorks .block-1 .content-wrapper h3.title {
-  font-size: 1.25em;
+  font-size: 1.953em;
+  margin-bottom: 2rem;
+  font-weight: 800;
 }
 section.howItWorks .block-1 .content-wrapper .steps {
   display: flex;
   flex-direction: column;
   font-size: 0.8em;
+  padding-left: 1rem;
 }
 section.howItWorks .block-1 .content-wrapper .steps .step {
   display: flex;
   flex-direction: columns;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
 }
 section.howItWorks .block-1 .content-wrapper .steps .step .img-wrapper {
   display: flex;
@@ -1419,16 +1423,27 @@ section.howItWorks .block-1 .content-wrapper .steps .step .img-wrapper {
   align-items: center;
 }
 section.howItWorks .block-1 .content-wrapper .steps .step .img-wrapper img {
-  width: 100%;
-  height: 100%;
   width: 6rem !important;
   height: 6rem !important;
 }
+section.howItWorks .block-1 .content-wrapper .steps .step:first-of-type .img-wrapper {
+  align-items: flex-start;
+  width: 6rem;
+  height: 6rem;
+}
+section.howItWorks .block-1 .content-wrapper .steps .step:first-of-type .img-wrapper img {
+  width: 5rem !important;
+  height: 5rem !important;
+}
 section.howItWorks .block-1 .content-wrapper .steps .step .step-description {
-  padding-left: 0.5rem;
+  padding-left: 1.2rem;
+  line-height: 1.25rem;
 }
 section.howItWorks .block-1 .content-wrapper .steps .step .step-description .title {
   font-weight: bold;
+}
+section.howItWorks .block-1 .content-wrapper .steps .step .step-description .text {
+  max-width: 36ch;
 }
 section.howItWorks .block-2 {
   background: url("../img/misc/como-funciona/bg-como-funciona.jpg");
