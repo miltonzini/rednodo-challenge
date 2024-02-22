@@ -1312,7 +1312,7 @@ section.categories .categories-grid {
   gap: 0.3rem;
   grid-template-columns: repeat(5, 1fr);
 }
-@media (max-width: 465px) {
+@media (max-width: 600px) {
   section.categories .categories-grid {
     grid-template-columns: 1fr;
   }
@@ -1322,7 +1322,7 @@ section.categories .categories-grid .block {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 section.categories .categories-grid .block img {
   width: 6rem;
@@ -1335,6 +1335,7 @@ section.categories .categories-grid .block p {
   text-transform: uppercase;
   margin-top: 2rem;
   text-align: center;
+  word-wrap: break-word !important;
 }
 @media (max-width: 900px) {
   section.categories .categories-grid .block p {

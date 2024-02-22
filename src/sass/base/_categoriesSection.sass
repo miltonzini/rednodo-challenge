@@ -6,7 +6,7 @@ section.categories
         grid-auto-rows: 1fr
         gap: 0.3rem
         grid-template-columns: repeat(5, 1fr)
-        @media ( max-width: 465px )
+        @media ( max-width: 600px )
             grid-template-columns: 1fr
 
         .block
@@ -14,7 +14,7 @@ section.categories
             flex-direction: column
             justify-content: center
             align-items: center
-            padding: 3rem 0
+            padding: 3rem 1rem
             img
                 width: 6rem
                 max-width: 90%
@@ -25,9 +25,9 @@ section.categories
                 text-transform: uppercase
                 margin-top: 2rem
                 text-align: center
+                word-wrap: break-word!important
                 @media  ( max-width: 900px )
                     font-size: $fz-1        
-                    
             
         .servicios
             background: $theme-green
