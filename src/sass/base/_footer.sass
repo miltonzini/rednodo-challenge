@@ -3,6 +3,10 @@ section#footer
     color: $theme-soft
     font-size: $fz-0
     padding: 3rem 1rem 5rem 1rem
+    a
+        transition: 250ms all
+        &:hover, &:focus,&:active
+            color: $theme-primary
     .rows-container
         display: flex
         flex-direction: column
@@ -102,6 +106,9 @@ section#footer
                         border-radius: 60px
                         margin-left: 0.2rem
                         margin-left: 0.2rem
+                        transition: 250ms all
+                        &:hover, &:focus,&:active
+                            background: $theme-primary
                         
                             
 

@@ -747,6 +747,9 @@ p {
 .header .header__links .socialIcons a {
   margin: 0 0;
 }
+.header .header__links .socialIcons a:hover, .header .header__links .socialIcons a:focus, .header .header__links .socialIcons a:active {
+  color: #ffd100;
+}
 @media (max-width: 819px) {
   .header .header__toggle {
     display: block;
@@ -1105,6 +1108,10 @@ section#categories .categories-grid .block {
   align-items: center;
   padding: 3.5rem 1rem 4.5rem 1rem;
 }
+section#categories .categories-grid .block:hover, section#categories .categories-grid .block:focus {
+  filter: brightness(1.1);
+  transition: 200ms all;
+}
 section#categories .categories-grid .block img {
   width: 6rem;
   max-width: 90%;
@@ -1370,6 +1377,12 @@ section#footer {
   font-size: 0.64em;
   padding: 3rem 1rem 5rem 1rem;
 }
+section#footer a {
+  transition: 250ms all;
+}
+section#footer a:hover, section#footer a:focus, section#footer a:active {
+  color: #ffd100;
+}
 section#footer .rows-container {
   display: flex;
   flex-direction: column;
@@ -1492,6 +1505,10 @@ section#footer .rows-container .row-2 .left .social .icon {
   border-radius: 60px;
   margin-left: 0.2rem;
   margin-left: 0.2rem;
+  transition: 250ms all;
+}
+section#footer .rows-container .row-2 .left .social .icon:hover, section#footer .rows-container .row-2 .left .social .icon:focus, section#footer .rows-container .row-2 .left .social .icon:active {
+  background: #ffd100;
 }
 section#footer .rows-container .row-2 .left .country {
   padding: 0 1rem;

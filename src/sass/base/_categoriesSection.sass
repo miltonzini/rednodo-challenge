@@ -15,6 +15,9 @@ section#categories
             justify-content: center
             align-items: center
             padding: 3.5rem 1rem 4.5rem 1rem
+            &:hover, &:focus
+                filter: brightness(1.1)
+                transition: 200ms all
             img
                 width: 6rem
                 max-width: 90%
@@ -39,6 +42,7 @@ section#categories
         
         .servicios
             background: $theme-green
+            
         .alquilerdeequipos
             background: $theme-cyan
         .hoteles
