@@ -893,7 +893,12 @@ section#main {
 section#main .container .img-grid-1 {
   grid-template-columns: 32% repeat(3, 1fr);
 }
-@media (max-width: 1325px) {
+@media (max-width: 600px) {
+  section#main .container .img-grid-1 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 1325px) {
   section#main .container .img-grid-1 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -901,7 +906,12 @@ section#main .container .img-grid-1 {
 section#main .container .img-grid-2 {
   grid-template-columns: repeat(3, 1fr) 32%;
 }
-@media (max-width: 1325px) {
+@media (max-width: 600px) {
+  section#main .container .img-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 1325px) {
   section#main .container .img-grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -917,9 +927,19 @@ section#main .container .img-grid-1, section#main .container .img-grid-2 {
   grid-auto-rows: 1fr;
   gap: 0.5rem;
 }
-@media (max-width: 1325px) {
+@media (max-width: 600px) {
+  section#main .container .img-grid-1, section#main .container .img-grid-2 {
+    min-height: 30rem;
+  }
+}
+@media (min-width: 601px) and (max-width: 1325px) {
   section#main .container .img-grid-1, section#main .container .img-grid-2 {
     min-height: 60rem;
+  }
+}
+@media (max-width: 600px) {
+  section#main .container .img-grid-1 .item, section#main .container .img-grid-2 .item {
+    min-height: 30rem;
   }
 }
 section#main .container .img-grid-1 .subgrid-type-a, section#main .container .img-grid-2 .subgrid-type-a {
@@ -952,6 +972,7 @@ section#main .container .img-grid-1 .element, section#main .container .img-grid-
   overflow: hidden;
   background-size: cover !important;
   background-repeat: no-repeat;
+  background-position: center;
 }
 section#main .container .img-grid-1 .element p, section#main .container .img-grid-2 .element p {
   display: inline;
