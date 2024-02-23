@@ -1142,24 +1142,30 @@ section#howItWorks {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 767px) {
+  section#howItWorks {
+    flex-direction: column-reverse;
+  }
+}
 section#howItWorks .block-1 {
-  width: 50%;
   display: flex;
   justify-content: flex-end;
   padding: 2rem 1rem;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  section#howItWorks .block-1 {
+    width: 100%;
+  }
 }
 section#howItWorks .block-1 .content-wrapper {
   height: 100%;
   width: 100%;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   section#howItWorks .block-1 .content-wrapper {
-    max-width: 275px;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  section#howItWorks .block-1 .content-wrapper {
-    max-width: 287px;
+    width: 100%;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1182,6 +1188,11 @@ section#howItWorks .block-1 .content-wrapper h3.title {
   margin-bottom: 2rem;
   font-weight: 800;
 }
+@media (min-width: 768px) {
+  section#howItWorks .block-1 .content-wrapper h3.title {
+    text-wrap: nowrap;
+  }
+}
 section#howItWorks .block-1 .content-wrapper .steps {
   display: flex;
   flex-direction: column;
@@ -1193,38 +1204,65 @@ section#howItWorks .block-1 .content-wrapper .steps .step {
   flex-direction: columns;
   margin: 0.3rem 0;
 }
+@media (max-width: 767px) {
+  section#howItWorks .block-1 .content-wrapper .steps .step {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+}
 section#howItWorks .block-1 .content-wrapper .steps .step .img-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 767px) {
+  section#howItWorks .block-1 .content-wrapper .steps .step .img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
 section#howItWorks .block-1 .content-wrapper .steps .step .img-wrapper img {
   width: 6rem !important;
   height: 6rem !important;
 }
-section#howItWorks .block-1 .content-wrapper .steps .step:first-of-type .img-wrapper {
-  align-items: flex-start;
-  width: 6rem;
-  height: 6rem;
-}
-section#howItWorks .block-1 .content-wrapper .steps .step:first-of-type .img-wrapper img {
-  width: 5rem !important;
-  height: 5rem !important;
+@media (min-width: 768px) {
+  section#howItWorks .block-1 .content-wrapper .steps .step:first-of-type .img-wrapper {
+    align-items: flex-start;
+    width: 6rem;
+    height: 6rem;
+  }
+  section#howItWorks .block-1 .content-wrapper .steps .step:first-of-type .img-wrapper img {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
 }
 section#howItWorks .block-1 .content-wrapper .steps .step .step-description {
   padding-left: 1.2rem;
   line-height: 1.25rem;
+  max-width: 36ch;
+}
+@media (max-width: 767px) {
+  section#howItWorks .block-1 .content-wrapper .steps .step .step-description {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 section#howItWorks .block-1 .content-wrapper .steps .step .step-description .title {
   font-weight: bold;
 }
-section#howItWorks .block-1 .content-wrapper .steps .step .step-description .text {
-  max-width: 36ch;
-}
 section#howItWorks .block-2 {
   background: url("../img/misc/como-funciona/bg-como-funciona.jpg");
   background-size: cover;
+  background-position: center;
   width: 50%;
+}
+@media (max-width: 767px) {
+  section#howItWorks .block-2 {
+    width: 100%;
+    min-height: 15rem;
+  }
 }
 
 section#subscribe {

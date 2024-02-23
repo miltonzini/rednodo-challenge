@@ -5,19 +5,21 @@ section#howItWorks
     min-height: 20rem
     display: flex
     flex-direction: row
+    @media (max-width: 767px)
+        flex-direction: column-reverse
     .block-1
-        width: 50%
         display: flex
         justify-content: flex-end
         padding: 2rem 1rem
+        width: 50%
+        @media (max-width: 767px)
+            width: 100%
         .content-wrapper
             height: 100%
             width: 100%
-            // background: gray // temp
-            @media (max-width: 575px)
-                max-width: 275px // prescindibles?
-            @media (min-width: 576px) and (max-width: 767px)
-                max-width: 287px // prescindibles?
+            @media (max-width: 767px)
+                width: 100%
+                text-align: center
             @media (min-width: 768px) and (max-width: 991px)
                 max-width: 384px
             @media (min-width: 992px) and (max-width: 1199px)
@@ -29,6 +31,9 @@ section#howItWorks
                 font-size: $fz-5
                 margin-bottom: 2rem
                 font-weight: 800
+                @media (min-width: 768px)
+                    text-wrap: nowrap
+                
 
             .steps
                 display: flex
@@ -40,31 +45,48 @@ section#howItWorks
                     display: flex
                     flex-direction: columns
                     margin: 0.3rem 0
+                    @media (max-width: 767px)
+                        display: flex
+                        flex-direction: column
+                        margin-bottom: 1.5rem
                     .img-wrapper
                         display: flex
                         justify-content: center
                         align-items: center
+                        @media (max-width: 767px)
+                            display: flex
+                            justify-content: center
                         img
                             width: 6rem!important
                             height: 6rem!important
                     &:first-of-type
-                        .img-wrapper
-                            align-items: flex-start
-                            width: 6rem
-                            height: 6rem
-                            img
-                                width: 5rem!important
-                                height: 5rem!important
+                        @media (min-width: 768px)
+                            .img-wrapper
+                                align-items: flex-start
+                                width: 6rem
+                                height: 6rem
+                                img
+                                    width: 5rem!important
+                                    height: 5rem!important
                                 
                             
                     .step-description
                         padding-left: 1.2rem
                         line-height: 1.25rem
+                        max-width: 36ch
+                        @media (max-width: 767px)
+                            padding-left: 0
+                            margin-left: auto
+                            margin-right: auto
                         .title
                             font-weight: bold
                         .text
-                            max-width: 36ch
+                            //
     .block-2
         background: url('../img/misc/como-funciona/bg-como-funciona.jpg')
         background-size: cover
+        background-position: center
         width: 50%
+        @media (max-width: 767px)
+            width: 100%
+            min-height: 15rem
