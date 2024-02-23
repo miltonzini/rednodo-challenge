@@ -1082,7 +1082,7 @@ section#categories .categories-grid .block {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 3.5rem 1rem 4.5rem 1rem;
 }
 section#categories .categories-grid .block img {
   width: 6rem;
@@ -1093,13 +1093,29 @@ section#categories .categories-grid .block p {
   font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 2rem;
+  margin-top: 0.8rem;
   text-align: center;
   word-wrap: break-word !important;
 }
 @media (max-width: 900px) {
   section#categories .categories-grid .block p {
     font-size: 0.8em;
+  }
+}
+@media (min-width: 381px) and (max-width: 600px) {
+  section#categories .categories-grid .block {
+    margin: 0 5rem;
+  }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+  section#categories .categories-grid .block {
+    padding: 3.5rem 0.7rem 4.5rem 0.7rem;
+  }
+  section#categories .categories-grid .block img {
+    width: 5rem;
+  }
+  section#categories .categories-grid .block p {
+    font-size: 0.71em;
   }
 }
 section#categories .categories-grid .servicios {
