@@ -812,6 +812,7 @@ p {
 section#masthead {
   background: url("../img/bg/masthead.jpg") !important;
   background-size: cover !important;
+  background-position: center !important;
   height: 100vh;
   min-height: 619px;
   display: flex;
@@ -963,7 +964,7 @@ section#main .container .img-grid-1 .subgrid-type-c, section#main .container .im
 section#main .container .img-grid-1 .item, section#main .container .img-grid-1 .subitem, section#main .container .img-grid-2 .item, section#main .container .img-grid-2 .subitem {
   height: 100%;
 }
-section#main .container .img-grid-1 .element, section#main .container .img-grid-1 a.element, section#main .container .img-grid-2 .element, section#main .container .img-grid-2 a.element {
+section#main .container .img-grid-1 .element, section#main .container .img-grid-2 .element {
   height: 100%;
   position: relative;
   flex-direction: column;
@@ -971,19 +972,20 @@ section#main .container .img-grid-1 .element, section#main .container .img-grid-
   padding: 1.5rem 0;
   overflow: hidden;
   background-size: cover !important;
+  background-position: center !important;
   background-repeat: no-repeat;
 }
-section#main .container .img-grid-1 .element:hover, section#main .container .img-grid-1 .element:active, section#main .container .img-grid-1 .element:focus, section#main .container .img-grid-1 a.element:hover, section#main .container .img-grid-1 a.element:active, section#main .container .img-grid-1 a.element:focus, section#main .container .img-grid-2 .element:hover, section#main .container .img-grid-2 .element:active, section#main .container .img-grid-2 .element:focus, section#main .container .img-grid-2 a.element:hover, section#main .container .img-grid-2 a.element:active, section#main .container .img-grid-2 a.element:focus {
+section#main .container .img-grid-1 .element:hover, section#main .container .img-grid-1 .element:active, section#main .container .img-grid-1 .element:focus, section#main .container .img-grid-2 .element:hover, section#main .container .img-grid-2 .element:active, section#main .container .img-grid-2 .element:focus {
   background-color: #ffd100;
   background-blend-mode: multiply;
   opacity: 0.5;
   transition: 200ms all;
 }
-section#main .container .img-grid-1 .element p, section#main .container .img-grid-1 a.element p, section#main .container .img-grid-2 .element p, section#main .container .img-grid-2 a.element p {
+section#main .container .img-grid-1 .element p, section#main .container .img-grid-2 .element p {
   display: inline;
   font-size: 1em;
 }
-section#main .container .img-grid-1 .element a.innerAnchor, section#main .container .img-grid-1 a.element a.innerAnchor, section#main .container .img-grid-2 .element a.innerAnchor, section#main .container .img-grid-2 a.element a.innerAnchor {
+section#main .container .img-grid-1 .element a.innerAnchor, section#main .container .img-grid-2 .element a.innerAnchor {
   width: 100%;
   height: 100%;
   position: absolute;
