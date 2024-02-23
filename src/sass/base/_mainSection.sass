@@ -58,7 +58,7 @@ section#main
                 height: 100%
                 
 
-            .element
+            .element, a.element
                 height: 100%
                 position: relative
                 flex-direction: column
@@ -71,11 +71,18 @@ section#main
                     background-color: $theme-primary
                     background-blend-mode: multiply
                     opacity: 0.5
-                    transition: 200ms all
-                    
+                    transition: 200ms all   
                 p
                     display: inline
                     font-size: $fz-2
+                a.innerAnchor
+                    width: 100%
+                    height: 100%
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    right: 0
+                    left: 0
 
                     
             .tag-dark
