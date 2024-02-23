@@ -822,14 +822,18 @@ section#masthead {
   margin-top: 0;
   padding: 0 1rem;
 }
+section#masthead .splide__track {
+  width: 90%;
+}
 section#masthead form {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 section#masthead form .input-wrapper {
   display: flex;
-  width: 100%;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 100%;
+  width: 36rem;
 }
 section#masthead form .input-wrapper input {
   border: 0;
