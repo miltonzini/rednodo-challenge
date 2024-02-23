@@ -1162,6 +1162,7 @@ section#howItWorks {
 @media (max-width: 767px) {
   section#howItWorks {
     flex-direction: column-reverse;
+    margin-top: 3rem;
   }
 }
 section#howItWorks .block-1 {
