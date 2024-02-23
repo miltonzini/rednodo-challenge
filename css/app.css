@@ -972,7 +972,12 @@ section#main .container .img-grid-1 .element, section#main .container .img-grid-
   overflow: hidden;
   background-size: cover !important;
   background-repeat: no-repeat;
-  background-position: center;
+}
+section#main .container .img-grid-1 .element:hover, section#main .container .img-grid-1 .element:active, section#main .container .img-grid-1 .element:focus, section#main .container .img-grid-2 .element:hover, section#main .container .img-grid-2 .element:active, section#main .container .img-grid-2 .element:focus {
+  background-color: #ffd100;
+  background-blend-mode: multiply;
+  opacity: 0.5;
+  transition: 200ms all;
 }
 section#main .container .img-grid-1 .element p, section#main .container .img-grid-2 .element p {
   display: inline;
@@ -1023,6 +1028,7 @@ section#main .container .img-grid-1 .cordoba, section#main .container .img-grid-
 }
 section#main .container .img-grid-1 .elcalafate, section#main .container .img-grid-2 .elcalafate {
   background: url("../img/misc/main/el-calafate.jpg");
+  background-position: center;
 }
 section#main .container .img-grid-1 .buenosaires, section#main .container .img-grid-2 .buenosaires {
   background: url("../img/misc/main/buenos-aires.jpg");

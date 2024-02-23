@@ -57,7 +57,6 @@ section#main
                 // background: pink
                 height: 100%
                 
-                
 
             .element
                 height: 100%
@@ -68,7 +67,12 @@ section#main
                 overflow: hidden
                 background-size: cover!important
                 background-repeat: no-repeat
-                background-position: center
+                &:hover,&:active,&:focus
+                    background-color: $theme-primary
+                    background-blend-mode: multiply
+                    opacity: 0.5
+                    transition: 200ms all
+                    
                 p
                     display: inline
                     font-size: $fz-2
@@ -98,7 +102,6 @@ section#main
                 width: 3rem
 
             .tag-vertical
-                // border: 2px solid cyan
                 color: $white
                 font-weight: bold
                 font-size: $fz-7
@@ -120,6 +123,7 @@ section#main
                 background: url("../img/misc/main/cordoba.jpg")
             .elcalafate
                 background: url("../img/misc/main/el-calafate.jpg")
+                background-position: center
             .buenosaires
                 background: url("../img/misc/main/buenos-aires.jpg")
             .jujuy
