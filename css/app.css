@@ -819,6 +819,7 @@ section#masthead {
   align-items: center;
   flex-direction: column;
   margin-top: 0;
+  padding: 0 1rem;
 }
 section#masthead form {
   margin-bottom: 2rem;
@@ -866,12 +867,15 @@ section#masthead h1.logo {
   color: #000;
   text-align: center;
   font-size: 3.815em;
+  line-height: 3rem;
+  text-wrap: balance;
 }
 section#masthead .brand-descrip {
   text-align: center;
   margin-top: 0.6rem;
   font-size: 1.563em;
   margin-top: 0;
+  text-wrap: balance;
 }
 section#masthead .btn-wrapper {
   text-align: center;
