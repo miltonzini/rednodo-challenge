@@ -603,7 +603,6 @@ section#main .container .img-grid-1, section#main .container .img-grid-2 {
   align-items: center;
   min-height: 28rem;
   width: 100%;
-  background: #eaeaea;
   margin-top: 0.5rem;
   display: grid;
   grid-auto-rows: 1fr;
