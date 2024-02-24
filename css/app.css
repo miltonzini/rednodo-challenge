@@ -1033,7 +1033,7 @@ section#subscribe form .input-wrapper input {
   font-weight: bold;
   border-radius: 0;
 }
-section#subscribe form .input-wrapper span.tag {
+section#subscribe form .input-wrapper input.tag {
   background: #000;
   color: #fff;
   height: 2.43rem;
@@ -1045,6 +1045,13 @@ section#subscribe form .input-wrapper span.tag {
   border-bottom-right-radius: 0.3rem;
   display: flex;
   align-items: center;
+}
+section#subscribe form .input-wrapper input.tag:hover {
+  cursor: pointer;
+  background: #ffd100;
+  border: 1px solid #000;
+  color: #000;
+  transition: 250ms all;
 }
 
 section#footer {
