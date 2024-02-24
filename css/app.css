@@ -1136,6 +1136,9 @@ section#footer .rows-container .row-1 .block-2 .sub-block-3 .subtitle {
 section#footer .rows-container .row-1 .block-2 p.title, section#footer .rows-container .row-1 .block-2 p.subtitle {
   font-weight: bold;
 }
+section#footer .rows-container .row-1 .block-2 p.title {
+  font-size: 1.25em;
+}
 section#footer .rows-container .row-1 .block-2 hr {
   width: 90%;
   margin: 0.5rem 0;
