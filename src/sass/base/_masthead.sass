@@ -41,13 +41,6 @@ section#masthead
                 min-width: 50px
                 text-align: center
 
-    img.logo
-        @media(max-width: 574px)
-            width: 50vw
-        @media(min-width: 575px) and (max-width: 899px)
-            width: 40vw
-        @media(min-width: 900px)
-            width: 25vw
     h1.logo
         text-transform: none
         color: $theme-dark
@@ -55,6 +48,11 @@ section#masthead
         font-size: $fz-8
         line-height: 3rem
         text-wrap: balance
+        @media (max-width: 767px)
+            font-size: $fz-6
+        @media (min-width: 768px) and (max-width: 991px)
+            font-size: $fz-7
+            
     .brand-descrip
         text-align: center
         margin-top: 0.6rem
