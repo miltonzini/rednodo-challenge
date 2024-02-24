@@ -364,6 +364,11 @@ p {
     margin: 0 0.5rem;
   }
 }
+@media (max-width: 500px) {
+  .header .firstBlock .by-hertz, .header .firstBlock .divider {
+    display: none;
+  }
+}
 .header .header__links {
   display: flex;
   flex-direction: row;
