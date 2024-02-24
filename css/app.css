@@ -285,6 +285,9 @@ p {
 .header.open .header__toggle > span:last-child {
   transform: rotate(-45deg);
 }
+.header.open .header__toggle span {
+  background: #ffd100;
+}
 .header .overlay {
   opacity: 0;
   position: fixed;
