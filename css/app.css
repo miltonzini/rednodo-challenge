@@ -497,6 +497,11 @@ section#masthead .splide__track {
   width: 90%;
   transform: translateY(-50px);
 }
+@media (max-height: 610px) {
+  section#masthead .splide__track {
+    transform: translateY(-20px);
+  }
+}
 section#masthead form {
   margin-bottom: 3rem;
 }
