@@ -489,7 +489,7 @@ p {
 }
 
 section#masthead {
-  background: url("../img/bg/masthead.jpg") !important;
+  background: url("../img/bg/masthead.webp") !important;
   background-size: cover !important;
   background-position: center !important;
   height: 100vh;
@@ -715,53 +715,53 @@ section#main .container .img-grid-1 .tag-dark, section#main .container .img-grid
   line-height: 0.5rem;
 }
 section#main .container .img-grid-1 .bariloche, section#main .container .img-grid-2 .bariloche {
-  background: url("../img/misc/main/bariloche.jpg");
+  background: url("../img/misc/main/bariloche.webp");
 }
 section#main .container .img-grid-1 .cordoba, section#main .container .img-grid-2 .cordoba {
-  background: url("../img/misc/main/cordoba.jpg");
+  background: url("../img/misc/main/cordoba.webp");
 }
 section#main .container .img-grid-1 .elcalafate, section#main .container .img-grid-2 .elcalafate {
-  background: url("../img/misc/main/el-calafate.jpg");
+  background: url("../img/misc/main/el-calafate.webp");
   background-position: center;
 }
 section#main .container .img-grid-1 .buenosaires, section#main .container .img-grid-2 .buenosaires {
-  background: url("../img/misc/main/buenos-aires.jpg");
+  background: url("../img/misc/main/buenos-aires.webp");
 }
 section#main .container .img-grid-1 .jujuy, section#main .container .img-grid-2 .jujuy {
-  background: url("../img/misc/main/jujuy.jpg");
+  background: url("../img/misc/main/jujuy.webp");
 }
 section#main .container .img-grid-1 .puertoiguazu, section#main .container .img-grid-2 .puertoiguazu {
-  background: url("../img/misc/main/puerto-iguazu.jpg");
+  background: url("../img/misc/main/puerto-iguazu.webp");
 }
 section#main .container .img-grid-1 .rosario, section#main .container .img-grid-2 .rosario {
-  background: url("../img/misc/main/rosario.jpg");
+  background: url("../img/misc/main/rosario.webp");
 }
 section#main .container .img-grid-1 .salta, section#main .container .img-grid-2 .salta {
-  background: url("../img/misc/main/salta.jpg");
+  background: url("../img/misc/main/salta.webp");
 }
 section#main .container .img-grid-1 .sanluis, section#main .container .img-grid-2 .sanluis {
-  background: url("../img/misc/main/san-luis.jpg");
+  background: url("../img/misc/main/san-luis.webp");
 }
 section#main .container .img-grid-1 .tucuman, section#main .container .img-grid-2 .tucuman {
-  background: url("../img/misc/main/tucuman.jpg");
+  background: url("../img/misc/main/tucuman.webp");
 }
 section#main .container .img-grid-1 .trelew, section#main .container .img-grid-2 .trelew {
-  background: url("../img/misc/main/trelew.jpg");
+  background: url("../img/misc/main/trelew.webp");
 }
 section#main .container .img-grid-1 .ushuaia, section#main .container .img-grid-2 .ushuaia {
-  background: url("../img/misc/main/ushuaia.jpg");
+  background: url("../img/misc/main/ushuaia.webp");
 }
 section#main .container .img-grid-1 .sanmartindelosandes, section#main .container .img-grid-2 .sanmartindelosandes {
-  background: url("../img/misc/main/san-martin-de-los-andes.jpg");
+  background: url("../img/misc/main/san-martin-de-los-andes.webp");
 }
 section#main .container .img-grid-1 .villalaangostura, section#main .container .img-grid-2 .villalaangostura {
-  background: url("../img/misc/main/villa-la-angostura.jpg");
+  background: url("../img/misc/main/villa-la-angostura.webp");
 }
 section#main .container .img-grid-1 .entrerios, section#main .container .img-grid-2 .entrerios {
-  background: url("../img/misc/main/entre-rios.jpg");
+  background: url("../img/misc/main/entre-rios.webp");
 }
 section#main .container .img-grid-1 .neuquen, section#main .container .img-grid-2 .neuquen {
-  background: url("../img/misc/main/neuquen.jpg");
+  background: url("../img/misc/main/neuquen.webp");
 }
 
 section#categories .categories-grid {
@@ -958,7 +958,7 @@ section#howItWorks .block-1 .content-wrapper .steps .step .step-description .tit
   font-weight: bold;
 }
 section#howItWorks .block-2 {
-  background: url("../img/misc/como-funciona/bg-como-funciona.jpg");
+  background: url("../img/misc/como-funciona/bg-como-funciona.webp");
   background-size: cover;
   background-position: center;
   width: 50%;
